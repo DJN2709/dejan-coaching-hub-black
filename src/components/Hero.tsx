@@ -11,7 +11,7 @@ const Hero = () => {
             Product Leadership <span className="text-primary">Coaching</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-prose">
-            Accelerate your product development with battle-tested frameworks and personalized coaching from someone who's been there.
+            Accelerate your product development with battle-tested frameworks, real-world insights, and personal coaching from someone who's been in the trenches.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link to="/booking">
