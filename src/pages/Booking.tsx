@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -68,7 +69,7 @@ const Booking = () => {
                 Book a Coaching Session
               </h1>
               <p className="text-xl text-white/80">
-                Take your product leadership skills to the next level with personalized coaching and guidance.
+                Elevate your product leadership with tailored coaching designed to unlock your full potential, sharpen your strategic thinking, and drive real impact—where it matters most.
               </p>
             </div>
           </div>
@@ -136,3 +137,4 @@ const Booking = () => {
 };
 
 export default Booking;
+
