@@ -5,24 +5,24 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer className="w-full border-t py-6 md:py-10">
+    <footer className="w-full border-t border-white/10 py-6 md:py-10 bg-black">
       <div className="container flex flex-col md:flex-row items-center justify-between gap-4">
         <div className="text-center md:text-left">
-          <p className="text-sm text-muted-foreground">
+          <p className="text-sm text-white/70">
             © {currentYear} Dejan Krstic. All rights reserved.
           </p>
         </div>
         <nav className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
-          <Link to="/" className="text-sm font-medium text-muted-foreground hover:text-primary">
+          <Link to="/" className="text-sm font-medium text-white/70 hover:text-white">
             Home
           </Link>
-          <Link to="/achievements" className="text-sm font-medium text-muted-foreground hover:text-primary">
+          <Link to="/achievements" className="text-sm font-medium text-white/70 hover:text-white">
             Achievements
           </Link>
-          <Link to="/frameworks" className="text-sm font-medium text-muted-foreground hover:text-primary">
+          <Link to="/frameworks" className="text-sm font-medium text-white/70 hover:text-white">
             Frameworks
           </Link>
-          <Link to="/booking" className="text-sm font-medium text-muted-foreground hover:text-primary">
+          <Link to="/booking" className="text-sm font-medium text-white/70 hover:text-white">
             Coaching
           </Link>
         </nav>
@@ -32,3 +32,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
