@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
@@ -20,8 +21,9 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4">
             <Link to="/booking">
               <Button 
+                variant="outline"
                 size="lg" 
-                className="bg-white text-black transform transition-all duration-200 hover:scale-105 active:scale-95 hover:shadow-[0_0_15px_rgba(255,255,255,0.3)]"
+                className="transform transition-all duration-200 hover:scale-105 active:scale-95 hover:shadow-[0_0_15px_rgba(255,255,255,0.3)]"
               >
                 Book a Coaching Session
               </Button>
