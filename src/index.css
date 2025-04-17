@@ -6,8 +6,8 @@
 @tailwind utilities;
 
 body {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   font-feature-settings: 'ss01' on, 'ss02' on; 
   font-variant-numeric: lining-nums;
   letter-spacing: -0.015em;
@@ -20,12 +20,12 @@ body {
 
 /* Optional: Additional typography refinements */
 h1, h2, h3, h4, h5, h6 {
-  color: white;
+  color: black;
   font-weight: 500;
   letter-spacing: -0.025em;
   line-height: 1.2;
 }
 
 a {
-  color: white;
+  color: black;
 }
