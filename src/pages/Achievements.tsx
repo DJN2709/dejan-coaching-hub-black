@@ -1,4 +1,3 @@
-
 import { Trophy, Award, Medal, BookOpen, Briefcase, Users } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -158,65 +157,6 @@ const Achievements = () => {
                   </div>
                 </div>
               ))}
-            </div>
-          </div>
-        </section>
-        
-        {/* Education & Certifications */}
-        <section className="py-16 md:py-24">
-          <div className="container">
-            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-12 text-center">
-              Education & Certifications
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <div className="bg-white p-6 rounded-lg border shadow-sm">
-                <div className="flex items-start gap-4">
-                  <div className="p-3 bg-blue-50 rounded-full">
-                    <BookOpen className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-1">Master's in Business Administration</h3>
-                    <p className="text-muted-foreground mb-2">Harvard Business School, 2010</p>
-                    <p>Specialized in Product Management and Innovation Strategy</p>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-white p-6 rounded-lg border shadow-sm">
-                <div className="flex items-start gap-4">
-                  <div className="p-3 bg-blue-50 rounded-full">
-                    <Medal className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-1">Certified Product Manager</h3>
-                    <p className="text-muted-foreground mb-2">Product Management Institute, 2012</p>
-                    <p>Advanced certification in product strategy, development, and management</p>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-white p-6 rounded-lg border shadow-sm">
-                <div className="flex items-start gap-4">
-                  <div className="p-3 bg-blue-50 rounded-full">
-                    <BookOpen className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-1">Bachelor's in Computer Science</h3>
-                    <p className="text-muted-foreground mb-2">MIT, 2006</p>
-                    <p>Foundations in software development and technical architecture</p>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-white p-6 rounded-lg border shadow-sm">
-                <div className="flex items-start gap-4">
-                  <div className="p-3 bg-blue-50 rounded-full">
-                    <Medal className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-1">Leadership Coaching Certification</h3>
-                    <p className="text-muted-foreground mb-2">International Coaching Federation, 2018</p>
-                    <p>Professional certification in leadership coaching methodologies</p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </section>
