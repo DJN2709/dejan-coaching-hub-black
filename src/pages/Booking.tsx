@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -62,13 +61,14 @@ const Booking = () => {
       title: "Team Workshop",
       description: "Interactive workshops for product teams to align on strategy and improve collaboration.",
       duration: "2 hours",
-      price: "$500",
+      price: "€450",
       features: [
         "Custom workshop design",
         "Collaborative exercises",
         "Team alignment",
         "Framework implementation"
-      ]
+      ],
+      bookingUrl: "https://booking.setmore.com/scheduleappointment/9307d7e5-e172-46a0-84e0-6cee4d029640/services/d0c5105d-b68f-4248-932b-70a8684a958b"
     },
     {
       icon: <Briefcase className="h-6 w-6 text-primary" />,
