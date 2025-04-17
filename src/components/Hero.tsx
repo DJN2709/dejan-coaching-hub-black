@@ -23,12 +23,14 @@ const Hero = () => {
           </div>
         </div>
         <div className="flex-1 relative">
-          <div className="relative w-full h-[400px] bg-muted rounded-lg overflow-hidden">
+          <div className="relative w-full h-[400px] bg-blue-50 rounded-lg overflow-hidden shadow-lg">
+            <div className="absolute inset-0 bg-gradient-to-tr from-blue-50/10 to-transparent mix-blend-overlay"></div>
             <img 
-              src="/lovable-uploads/91135de3-a3e4-4074-9cf4-89e81c23233c.png" 
-              alt="Dejan Krstic" 
+              src="/lovable-uploads/776095df-6ce7-4ebb-8318-ade789fad45e.png" 
+              alt="Dejan Krstic - Product Leadership Coach" 
               className="object-cover w-full h-full"
             />
+            <div className="absolute inset-0 bg-primary/5 mix-blend-overlay"></div>
           </div>
         </div>
       </div>
