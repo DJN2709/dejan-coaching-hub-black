@@ -1,4 +1,3 @@
-
 import { Link, useLocation } from "react-router-dom";
 import { Linkedin, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -11,7 +10,6 @@ const Navbar = () => {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-6">
           <Link to="/" className="font-display text-2xl font-bold tracking-tight text-white">
-            DK
           </Link>
           <nav className="hidden md:flex gap-6">
             <Link
@@ -71,4 +69,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
