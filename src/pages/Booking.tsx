@@ -87,7 +87,10 @@ const Booking = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {coachingServices.map((service, index) => (
-                <Card key={index} className="flex flex-col h-full bg-black border-white/10">
+                <Card 
+                  key={index} 
+                  className="flex flex-col h-full bg-black border-white"
+                >
                   <CardHeader>
                     <div className="flex justify-between items-start">
                       <div className="p-2 bg-white/10 rounded-lg">
