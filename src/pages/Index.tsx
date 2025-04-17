@@ -80,68 +80,6 @@ const Index = () => {
           </div>
         </section>
         
-        {/* Testimonials Section */}
-        <section className="py-16 md:py-24 bg-blue-50">
-          <div className="container">
-            <div className="text-center mb-12">
-              <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4">
-                What Others Say
-              </h2>
-              <p className="text-lg text-muted-foreground max-w-[800px] mx-auto">
-                I've had the privilege of helping product leaders and organizations achieve remarkable results.
-              </p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <div className="bg-white p-6 rounded-lg shadow">
-                <p className="italic mb-4">
-                  "Dejan's frameworks transformed how we approach product development. His coaching helped me become a more effective leader."
-                </p>
-                <div className="flex items-center">
-                  <div className="w-10 h-10 bg-gray-200 rounded-full mr-3"></div>
-                  <div>
-                    <p className="font-medium">Sarah Johnson</p>
-                    <p className="text-sm text-muted-foreground">Product Director, Tech Company</p>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow">
-                <p className="italic mb-4">
-                  "The insights gained from our coaching sessions were invaluable. Dejan has a unique ability to simplify complex product challenges."
-                </p>
-                <div className="flex items-center">
-                  <div className="w-10 h-10 bg-gray-200 rounded-full mr-3"></div>
-                  <div>
-                    <p className="font-medium">Michael Chen</p>
-                    <p className="text-sm text-muted-foreground">CPO, Startup</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        
-        {/* Framework Image Section */}
-        <section className="py-16 md:py-24">
-          <div className="container">
-            <div className="max-w-5xl mx-auto">
-              <div className="rounded-lg overflow-hidden shadow-lg">
-                <img 
-                  src="/lovable-uploads/d29cc8d1-0287-4333-bcb7-1432b511b110.png" 
-                  alt="The Problem Framework" 
-                  className="w-full h-auto"
-                />
-              </div>
-              <div className="mt-16 rounded-lg overflow-hidden shadow-lg">
-                <img 
-                  src="/lovable-uploads/08349353-a37e-4e7c-9ed8-834593743e69.png" 
-                  alt="Development Process Flow" 
-                  className="w-full h-auto"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-        
         {/* CTA Section */}
         <section className="py-16 md:py-24">
           <div className="container">
@@ -165,3 +103,4 @@ const Index = () => {
 };
 
 export default Index;
+
