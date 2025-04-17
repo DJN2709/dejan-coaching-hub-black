@@ -108,6 +108,28 @@ const Index = () => {
           </div>
         </section>
         
+        {/* Framework Image Section */}
+        <section className="py-16 md:py-24">
+          <div className="container">
+            <div className="max-w-5xl mx-auto">
+              <div className="rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src="/lovable-uploads/d29cc8d1-0287-4333-bcb7-1432b511b110.png" 
+                  alt="The Problem Framework" 
+                  className="w-full h-auto"
+                />
+              </div>
+              <div className="mt-16 rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src="/lovable-uploads/08349353-a37e-4e7c-9ed8-834593743e69.png" 
+                  alt="Development Process Flow" 
+                  className="w-full h-auto"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        
         {/* CTA Section */}
         <section className="py-16 md:py-24">
           <div className="container">

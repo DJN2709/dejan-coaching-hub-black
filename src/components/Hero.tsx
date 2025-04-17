@@ -25,7 +25,7 @@ const Hero = () => {
         <div className="flex-1 relative">
           <div className="relative w-full h-[400px] bg-muted rounded-lg overflow-hidden">
             <img 
-              src="/lovable-uploads/0d1cda13-e96b-432b-a5ff-c0182a0acde2.png" 
+              src="/lovable-uploads/91135de3-a3e4-4074-9cf4-89e81c23233c.png" 
               alt="Dejan Krstic" 
               className="object-cover w-full h-full"
             />
