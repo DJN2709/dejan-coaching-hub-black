@@ -1,15 +1,10 @@
-
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Calendar, Clock, Users, Briefcase, CheckCircle2, PhoneCall, Video, Users2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Label } from "@/components/ui/label";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { toast } from "sonner";
+import NavigationButtons from "@/components/NavigationButtons";
 
 const Booking = () => {
   const coachingServices = [
@@ -61,7 +56,6 @@ const Booking = () => {
     <div className="flex min-h-screen flex-col bg-black text-white">
       <Navbar />
       <main className="flex-1">
-        {/* Hero Section */}
         <section className="py-8 md:py-12 bg-black">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center">
@@ -75,7 +69,6 @@ const Booking = () => {
           </div>
         </section>
         
-        {/* Services Section */}
         <section className="py-12 md:py-16">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center mb-12">
@@ -130,6 +123,7 @@ const Booking = () => {
             </div>
           </div>
         </section>
+        <NavigationButtons />
       </main>
       <Footer />
     </div>
@@ -137,4 +131,3 @@ const Booking = () => {
 };
 
 export default Booking;
-
