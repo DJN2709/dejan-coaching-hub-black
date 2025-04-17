@@ -35,42 +35,42 @@ const Index = () => {
         <Hero />
         
         {/* Features Section */}
-        <section className="py-16 md:py-24 bg-black">
-          <div className="container">
-            <div className="text-center mb-12">
-              <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4 text-white">
+        <section className="py-8 md:py-16 lg:py-24 bg-black px-4 md:px-0">
+          <div className="container max-w-7xl mx-auto">
+            <div className="text-center mb-8 md:mb-12">
+              <h2 className="font-display text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight mb-4 text-white">
                 How I Can Help You
               </h2>
               <div className="max-w-[800px] mx-auto">
-                <p className="text-lg text-white/80 mb-6">
+                <p className="text-base md:text-lg text-white/80 mb-4 md:mb-6">
                   I help product teams move faster, think clearer, and build smarter—by combining deep domain expertise with battle-tested product frameworks and a people-first approach. With over 12 years of product leadership experience in the music-tech space, I've worked across B2C and B2B, helping launch, scale, and sometimes gloriously fail products. Every step brought its own lesson, and I use that knowledge today to empower others to do better work.
                 </p>
-                <h3 className="text-xl font-semibold mb-4 text-white">What I Do</h3>
-                <p className="text-md text-white/80 mb-6">
+                <h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-white">What I Do</h3>
+                <p className="text-sm md:text-md text-white/80 mb-4 md:mb-6">
                   I focus on building high-performing product teams with a culture of ownership, trust, and experimentation. My approach involves coaching teams to make outcome-driven decisions using OKRs, value stream mapping, and discovery best practices. I specialize in designing product strategies that align user needs with business goals, and I craft operationally efficient solutions for highly complex financial and rights-based ecosystems.
                 </p>
-                <h3 className="text-xl font-semibold mb-4 text-white">How I Lead</h3>
-                <p className="text-md text-white/80 mb-8">
+                <h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-white">How I Lead</h3>
+                <p className="text-sm md:text-md text-white/80 mb-6 md:mb-8">
                   Leadership is a team sport. I aim to cultivate psychological safety, curiosity, and joy within every team I work with. I've helped establish forums for collaborative planning, celebrated failure to normalize learning, and actively mentored team members in product craft.
                 </p>
-                <p className="text-md text-white/80 mb-8">
+                <p className="text-sm md:text-md text-white/80 mb-6 md:mb-8">
                   I also speak at product events and mentor aspiring PMs through programs like Product School and Growth School.
                 </p>
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
               {features.map((feature, index) => (
                 <div 
                   key={index} 
-                  className="flex flex-col items-center text-center p-6 bg-black rounded-lg border border-white transition-colors"
+                  className="flex flex-col items-center text-center p-4 md:p-6 bg-black rounded-lg border border-white transition-colors"
                 >
                   <div className="mb-4 p-3 bg-white/10 rounded-full">
                     {feature.icon}
                   </div>
-                  <h3 className="text-xl font-bold mb-2 text-white">{feature.title}</h3>
-                  <p className="text-white/80 mb-4 flex-1">{feature.description}</p>
+                  <h3 className="text-lg md:text-xl font-bold mb-2 text-white">{feature.title}</h3>
+                  <p className="text-sm md:text-base text-white/80 mb-4 flex-1">{feature.description}</p>
                   <Link to={feature.link}>
-                    <Button variant="outline" className="gap-1 group">
+                    <Button variant="outline" className="gap-1 group text-sm md:text-base">
                       Learn more <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                     </Button>
                   </Link>
@@ -81,17 +81,17 @@ const Index = () => {
         </section>
         
         {/* CTA Section */}
-        <section className="py-16 md:py-24 bg-black">
-          <div className="container">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4 text-white">
+        <section className="py-8 md:py-16 lg:py-24 bg-black px-4 md:px-0">
+          <div className="container max-w-4xl mx-auto">
+            <div className="text-center">
+              <h2 className="font-display text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight mb-4 text-white">
                 Ready to Elevate Your Product Leadership?
               </h2>
-              <p className="text-lg text-white/80 mb-8 max-w-[800px] mx-auto">
+              <p className="text-sm md:text-lg text-white/80 mb-6 md:mb-8 max-w-[800px] mx-auto">
                 Book a coaching session with me to discuss your specific challenges and goals. Let's work together to take your product leadership skills to the next level.
               </p>
               <Link to="/booking">
-                <Button variant="outline" size="lg" className="gap-2 group bg-white">
+                <Button variant="outline" size="lg" className="gap-2 group bg-white text-sm md:text-base">
                   Book a Session <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
