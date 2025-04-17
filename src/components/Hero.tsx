@@ -20,7 +20,7 @@ const Hero = () => {
           </div>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link to="/booking">
-              <Button size="lg">Book a Coaching Session</Button>
+              <Button size="lg" className="bg-white">Book a Coaching Session</Button>
             </Link>
             <Link to="/frameworks">
               <Button variant="outline" size="lg">Explore Frameworks</Button>
@@ -46,3 +46,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
