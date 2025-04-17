@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -52,46 +53,6 @@ export default {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))'
         },
-        brand: {
-          "blue": "#1A73E8",
-          "dark-blue": "#0D47A1",
-          "light-blue": "#E3F2FD",
-        },
-        sidebar: {
-          DEFAULT: 'hsl(var(--sidebar-background))',
-          foreground: 'hsl(var(--sidebar-foreground))',
-          primary: 'hsl(var(--sidebar-primary))',
-          'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-          accent: 'hsl(var(--sidebar-accent))',
-          'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-          border: 'hsl(var(--sidebar-border))',
-          ring: 'hsl(var(--sidebar-ring))'
-        }
-      },
-      fontFamily: {
-        sans: ['proxima-nova', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', "Segoe UI", 'Roboto', "Helvetica Neue", 'Arial', "Noto Sans", 'sans-serif'],
-        display: ['proxima-nova', 'sans-serif']
-      },
-      fontSize: {
-        'xs': ['0.75rem', { lineHeight: '1.125', letterSpacing: '-0.02em' }],
-        'sm': ['0.875rem', { lineHeight: '1.25', letterSpacing: '-0.02em' }],
-        'base': ['1rem', { lineHeight: '1.5', letterSpacing: '-0.015em' }],
-        'lg': ['1.125rem', { lineHeight: '1.55', letterSpacing: '-0.025em' }],
-        'xl': ['1.25rem', { lineHeight: '1.4', letterSpacing: '-0.03em' }],
-        '2xl': ['1.5rem', { lineHeight: '1.3', letterSpacing: '-0.035em' }],
-        '3xl': ['1.875rem', { lineHeight: '1.2', letterSpacing: '-0.04em' }],
-        '4xl': ['2.25rem', { lineHeight: '1.1', letterSpacing: '-0.045em' }],
-        '5xl': ['3rem', { lineHeight: '1', letterSpacing: '-0.05em' }],
-        '6xl': ['3.75rem', { lineHeight: '1', letterSpacing: '-0.06em' }],
-      },
-      typography: {
-        DEFAULT: {
-          css: {
-            fontWeight: '400',
-            lineHeight: '1.5',
-            letterSpacing: '-0.015em',
-          }
-        }
       },
       borderRadius: {
         lg: 'var(--radius)',
@@ -99,28 +60,21 @@ export default {
         sm: 'calc(var(--radius) - 4px)'
       },
       keyframes: {
-        'accordion-down': {
-          from: {
-            height: '0'
-          },
-          to: {
-            height: 'var(--radix-accordion-content-height)'
-          }
+        "accordion-down": {
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
-        'accordion-up': {
-          from: {
-            height: 'var(--radix-accordion-content-height)'
-          },
-          to: {
-            height: '0'
-          }
-        }
+        "accordion-up": {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
       },
       animation: {
-        'accordion-down': 'accordion-down 0.2s ease-out',
-        'accordion-up': 'accordion-up 0.2s ease-out'
-      }
-    }
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
+      },
+    },
   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;
+
