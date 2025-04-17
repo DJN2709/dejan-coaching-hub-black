@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
+import NavigationButtons from "@/components/NavigationButtons";
 
 const Index = () => {
   const features = [
@@ -99,6 +100,7 @@ const Index = () => {
           </div>
         </section>
       </main>
+      <NavigationButtons />
       <Footer />
     </div>
   );

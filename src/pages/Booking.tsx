@@ -1,7 +1,7 @@
-
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import NavigationButtons from "@/components/NavigationButtons";
 import { Calendar, Clock, Users, Briefcase, CheckCircle2, PhoneCall, Video, Users2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
@@ -131,10 +131,10 @@ const Booking = () => {
           </div>
         </section>
       </main>
+      <NavigationButtons />
       <Footer />
     </div>
   );
 };
 
 export default Booking;
-
