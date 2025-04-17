@@ -19,10 +19,21 @@ const Hero = () => {
           </div>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link to="/booking">
-              <Button size="lg" className="bg-white text-black">Book a Coaching Session</Button>
+              <Button 
+                size="lg" 
+                className="bg-white text-black transform transition-all duration-200 hover:scale-105 active:scale-95 hover:shadow-[0_0_15px_rgba(255,255,255,0.5)]"
+              >
+                Book a Coaching Session
+              </Button>
             </Link>
             <Link to="/frameworks">
-              <Button variant="outline" size="lg">Explore Frameworks</Button>
+              <Button 
+                variant="outline" 
+                size="lg"
+                className="transform transition-all duration-200 hover:scale-105 active:scale-95 hover:shadow-[0_0_15px_rgba(255,255,255,0.3)]"
+              >
+                Explore Frameworks
+              </Button>
             </Link>
           </div>
         </div>
