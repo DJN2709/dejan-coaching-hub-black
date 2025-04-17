@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { ArrowRight, Award, Code, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -90,7 +91,9 @@ const Index = () => {
                 Book a coaching session with me to discuss your specific challenges and goals. Let's work together to take your product leadership skills to the next level.
               </p>
               <Link to="/booking">
-                <Button size="lg">Book a Session Now</Button>
+                <Button variant="outline" size="lg" className="gap-2 group">
+                  Book a Session <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                </Button>
               </Link>
             </div>
           </div>
