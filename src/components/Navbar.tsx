@@ -1,3 +1,4 @@
+
 import { Link, useLocation } from "react-router-dom";
 import { Linkedin, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -14,32 +15,40 @@ const Navbar = () => {
           <nav className="hidden md:flex gap-6">
             <Link
               to="/"
-              className={`text-sm font-medium transition-colors hover:text-white ${
-                location.pathname === "/" ? "text-white" : "text-white/70"
+              className={`text-sm font-medium transition-colors rounded-2xl px-4 py-2 ${
+                location.pathname === "/" 
+                ? "bg-white text-black" 
+                : "text-white hover:bg-white hover:text-black"
               }`}
             >
               Home
             </Link>
             <Link
               to="/achievements"
-              className={`text-sm font-medium transition-colors hover:text-white ${
-                location.pathname === "/achievements" ? "text-white" : "text-white/70"
+              className={`text-sm font-medium transition-colors rounded-2xl px-4 py-2 ${
+                location.pathname === "/achievements" 
+                ? "bg-white text-black" 
+                : "text-white hover:bg-white hover:text-black"
               }`}
             >
               Achievements
             </Link>
             <Link
               to="/frameworks"
-              className={`text-sm font-medium transition-colors hover:text-white ${
-                location.pathname === "/frameworks" ? "text-white" : "text-white/70"
+              className={`text-sm font-medium transition-colors rounded-2xl px-4 py-2 ${
+                location.pathname === "/frameworks" 
+                ? "bg-white text-black" 
+                : "text-white hover:bg-white hover:text-black"
               }`}
             >
               Frameworks
             </Link>
             <Link
               to="/booking"
-              className={`text-sm font-medium transition-colors hover:text-white ${
-                location.pathname === "/booking" ? "text-white" : "text-white/70"
+              className={`text-sm font-medium transition-colors rounded-2xl px-4 py-2 ${
+                location.pathname === "/booking" 
+                ? "bg-white text-black" 
+                : "text-white hover:bg-white hover:text-black"
               }`}
             >
               Coaching
