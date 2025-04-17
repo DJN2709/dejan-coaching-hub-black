@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -75,13 +76,14 @@ const Booking = () => {
       title: "Leadership Advisory",
       description: "Strategic advisory services for product executives and leadership teams.",
       duration: "90 min",
-      price: "$350",
+      price: "€250",
       features: [
         "Strategic planning",
         "Leadership development",
         "Organizational design",
         "Change management"
-      ]
+      ],
+      bookingUrl: "https://booking.setmore.com/scheduleappointment/9307d7e5-e172-46a0-84e0-6cee4d029640/services/51a80e26-d104-4193-9c25-1eb0a5a2b763"
     }
   ];
 
