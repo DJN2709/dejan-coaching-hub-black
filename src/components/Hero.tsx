@@ -5,17 +5,17 @@ import { QuoteIcon } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="py-12 md:py-20 lg:py-32 bg-gradient-to-b from-white to-blue-50">
+    <section className="py-12 md:py-20 lg:py-32 bg-black">
       <div className="container flex flex-col md:flex-row items-center gap-8 md:gap-16">
         <div className="flex-1 space-y-6">
-          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
-            Product Leadership <span className="text-primary">Coaching</span>
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white">
+            Product Leadership <span className="text-white">Coaching</span>
           </h1>
           <div className="space-y-4">
-            <p className="text-xl text-muted-foreground max-w-prose">
+            <p className="text-xl text-white/80 max-w-prose">
               Accelerate your product development with battle-tested frameworks, real-world insights, and personal coaching from someone who's been in the trenches.
             </p>
-            <p className="text-lg font-semibold text-primary max-w-prose">
+            <p className="text-lg font-semibold text-white max-w-prose">
               Let's turn your product vision into reality—together.
             </p>
           </div>
@@ -29,16 +29,14 @@ const Hero = () => {
           </div>
         </div>
         <div className="flex-1 relative">
-          <div className="relative w-full h-[400px] bg-blue-50 rounded-lg overflow-hidden shadow-lg">
-            <div className="absolute inset-0 bg-gradient-to-tr from-blue-50/10 to-transparent mix-blend-overlay"></div>
+          <div className="relative w-full h-[400px] bg-black rounded-lg overflow-hidden shadow-lg">
             <img 
               src="/lovable-uploads/776095df-6ce7-4ebb-8318-ade789fad45e.png" 
               alt="Dejan Krstic - Product Leadership Coach" 
               className="object-cover w-full h-full"
             />
-            <div className="absolute inset-0 bg-primary/5 mix-blend-overlay"></div>
           </div>
-          <p className="mt-4 text-sm italic text-gray-700 text-center">
+          <p className="mt-4 text-sm italic text-white/70 text-center">
             I've built and launched products across both B2C and B2B—some that scaled beautifully, and others that failed gloriously. Each experience sharpened my understanding of what it truly takes to create products that solve real problems and drive impact.
           </p>
         </div>
