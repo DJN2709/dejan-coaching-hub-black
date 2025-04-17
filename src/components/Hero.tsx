@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { QuoteIcon } from "lucide-react";
@@ -14,12 +13,6 @@ const Hero = () => {
           <div className="space-y-4">
             <p className="text-xl text-muted-foreground max-w-prose">
               Accelerate your product development with battle-tested frameworks, real-world insights, and personal coaching from someone who's been in the trenches.
-            </p>
-            <p className="text-lg text-muted-foreground max-w-prose">
-              I've built and launched products across both B2C and B2B—some that scaled beautifully, and others that failed gloriously. Each experience sharpened my understanding of what it truly takes to create products that solve real problems and drive impact. From navigating the chaos of early-stage startups to steering strategic growth at scale, I bring lessons learned the hard way—so you don't have to.
-            </p>
-            <p className="text-lg text-muted-foreground max-w-prose">
-              Whether you need a second brain for shaping your strategy, guidance through execution, or a sounding board for the messy in-between, I'm here to help you move faster, smarter, and with more confidence.
             </p>
             <p className="text-lg font-semibold text-primary max-w-prose">
               Let's turn your product vision into reality—together.
