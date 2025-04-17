@@ -62,7 +62,7 @@ const Index = () => {
               {features.map((feature, index) => (
                 <div 
                   key={index} 
-                  className="flex flex-col items-center text-center p-6 bg-black rounded-lg border border-white/10 hover:border-white/20 transition-colors"
+                  className="flex flex-col items-center text-center p-6 bg-black rounded-lg border border-white transition-colors"
                 >
                   <div className="mb-4 p-3 bg-white/10 rounded-full">
                     {feature.icon}
