@@ -1,25 +1,24 @@
 
-@import url('https://use.typekit.net/xxx.css'); // Replace 'xxx' with your Adobe Fonts kit ID
+@import url('https://use.typekit.net/xxx.css'); /* Replace 'xxx' with your Adobe Fonts kit ID */
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  font-feature-settings: 'ss01' on, 'ss02' on; // Enable stylistic sets for a more puristic look
-  font-variant-numeric: lining-nums; // Consistent number styling
-  letter-spacing: -0.015em; // Slightly tighter letter spacing
-  font-weight: 400; // Use a clean, consistent weight
-  line-height: 1.5; // Improve readability
-  text-rendering: optimizeLegibility; // Improve font rendering
-  -webkit-font-smoothing: antialiased; // Smooth font rendering
-  -moz-osx-font-smoothing: grayscale; // Firefox font smoothing
+  font-feature-settings: 'ss01' on, 'ss02' on; /* Enable stylistic sets for a more puristic look */
+  font-variant-numeric: lining-nums; /* Consistent number styling */
+  letter-spacing: -0.015em; /* Slightly tighter letter spacing */
+  font-weight: 400; /* Use a clean, consistent weight */
+  line-height: 1.5; /* Improve readability */
+  text-rendering: optimizeLegibility; /* Improve font rendering */
+  -webkit-font-smoothing: antialiased; /* Smooth font rendering */
+  -moz-osx-font-smoothing: grayscale; /* Firefox font smoothing */
 }
 
-// Optional: Additional typography refinements
+/* Optional: Additional typography refinements */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   letter-spacing: -0.025em;
   line-height: 1.2;
 }
-
