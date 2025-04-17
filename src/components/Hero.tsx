@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
@@ -22,7 +23,7 @@ const Hero = () => {
               <Button 
                 variant="outline"
                 size="lg" 
-                className="bg-black text-white hover:bg-black/90 transform transition-all duration-200 hover:scale-105 active:scale-95 hover:shadow-[0_0_15px_rgba(255,255,255,0.3)]"
+                className="transform transition-all duration-200 hover:scale-105 active:scale-95 hover:shadow-[0_0_15px_rgba(255,255,255,0.3)]"
               >
                 Book a Coaching Session
               </Button>
@@ -31,7 +32,7 @@ const Hero = () => {
               <Button 
                 variant="outline" 
                 size="lg"
-                className="bg-black text-white hover:bg-black/90 transform transition-all duration-200 hover:scale-105 active:scale-95 hover:shadow-[0_0_15px_rgba(255,255,255,0.3)]"
+                className="transform transition-all duration-200 hover:scale-105 active:scale-95 hover:shadow-[0_0_15px_rgba(255,255,255,0.3)]"
               >
                 Explore Frameworks
               </Button>

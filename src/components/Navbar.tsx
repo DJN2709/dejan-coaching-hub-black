@@ -1,3 +1,4 @@
+
 import { Link, useLocation } from "react-router-dom";
 import { Linkedin, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -68,7 +69,7 @@ const Navbar = () => {
             </a>
           </div>
           <Link to="/booking">
-            <Button className="bg-black text-white hover:bg-black/90">Book a Session</Button>
+            <Button className="bg-white text-black hover:bg-white/90">Book a Session</Button>
           </Link>
         </div>
       </div>

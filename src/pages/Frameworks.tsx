@@ -3,7 +3,6 @@ import Footer from "@/components/Footer";
 import { Component, LayoutGrid, Globe, Workflow, ArrowRight, Download, FileDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import NavigationButtons from "@/components/NavigationButtons";
 
 const Frameworks = () => {
   const frameworks = [
@@ -219,7 +218,6 @@ const Frameworks = () => {
         </section>
       </main>
       <Footer />
-      <NavigationButtons />
     </div>
   );
 };

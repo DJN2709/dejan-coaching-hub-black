@@ -1,10 +1,10 @@
+
 import { Link } from "react-router-dom";
 import { ArrowRight, Award, Code, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
-import NavigationButtons from "@/components/NavigationButtons";
 
 const Index = () => {
   const features = [
@@ -98,7 +98,6 @@ const Index = () => {
             </div>
           </div>
         </section>
-        <NavigationButtons />
       </main>
       <Footer />
     </div>
