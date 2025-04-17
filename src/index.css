@@ -1,45 +1,19 @@
+
 @import url('https://use.typekit.net/xxx.css'); /* Replace 'xxx' with your Adobe Fonts kit ID */
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  :root {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 240 5.9% 10%;
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 240 4.9% 83.9%;
-    --radius: 0.75rem;
-  }
-}
-
 body {
-  font-feature-settings: 'ss01' on, 'ss02' on;
-  font-variant-numeric: lining-nums;
-  letter-spacing: -0.015em;
-  font-weight: 400;
-  line-height: 1.5;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: white;
-  color: black;
+  font-feature-settings: 'ss01' on, 'ss02' on; /* Enable stylistic sets for a more puristic look */
+  font-variant-numeric: lining-nums; /* Consistent number styling */
+  letter-spacing: -0.015em; /* Slightly tighter letter spacing */
+  font-weight: 400; /* Use a clean, consistent weight */
+  line-height: 1.5; /* Improve readability */
+  text-rendering: optimizeLegibility; /* Improve font rendering */
+  -webkit-font-smoothing: antialiased; /* Smooth font rendering */
+  -moz-osx-font-smoothing: grayscale; /* Firefox font smoothing */
 }
 
 /* Optional: Additional typography refinements */
@@ -47,13 +21,4 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   letter-spacing: -0.025em;
   line-height: 1.2;
-  color: black;
-}
-
-body {
-  @apply bg-background text-foreground;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  @apply text-foreground;
 }
