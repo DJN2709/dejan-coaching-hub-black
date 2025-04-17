@@ -18,16 +18,13 @@ const Hero = () => {
               Let's turn your product vision into reality—together.
             </p>
           </div>
-          <div className="flex flex-row items-center gap-4">
+          <div className="flex flex-col sm:flex-row gap-4">
             <Link to="/booking">
               <Button size="lg" className="bg-white text-black">Book a Coaching Session</Button>
             </Link>
             <Link to="/frameworks">
               <Button variant="outline" size="lg">Explore Frameworks</Button>
             </Link>
-            <p className="text-sm italic text-white/70 ml-4">
-              I've built and launched products across both B2C and B2B—some that scaled beautifully, and others that failed gloriously. Each experience sharpened my understanding of what it truly takes to create products that solve real problems and drive impact.
-            </p>
           </div>
         </div>
         <div className="flex-1 flex flex-col mt-2">
@@ -41,6 +38,9 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
             </div>
           </div>
+          <p className="text-sm italic text-white/70 mt-16 max-w-[90%]">
+            I've built and launched products across both B2C and B2B—some that scaled beautifully, and others that failed gloriously. Each experience sharpened my understanding of what it truly takes to create products that solve real problems and drive impact.
+          </p>
         </div>
       </div>
     </section>
