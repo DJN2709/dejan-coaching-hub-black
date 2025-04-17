@@ -24,47 +24,47 @@ const Achievements = () => {
   
   const careerHighlights = [
     {
-      year: "2018-Present",
-      role: "Product Leadership Coach",
-      company: "Independent",
-      description: "Providing coaching and consulting to product leaders and organizations to help them build better products and teams.",
-      achievements: [
-        "Developed custom frameworks for product leadership",
-        "Coached 100+ product leaders from startups to enterprise companies",
-        "Conducted workshops on product strategy and execution"
-      ]
-    },
-    {
-      year: "2015-2018",
-      role: "Director of Product",
+      year: "Current",
+      role: "Group Product Manager, Creator and Enterprise Payouts",
       company: "Spotify",
-      description: "Led the product team responsible for the royalty platform, significantly improving the way artists and rights holders get paid.",
+      description: "Driving innovation in the complex world of royalties and creator payouts. Built and led high-performing teams across EMEA, launching scalable solutions that power the financial backbone of Spotify's creator economy.",
       achievements: [
-        "Redesigned the royalty calculation system, improving accuracy by 15%",
-        "Implemented new data processing pipelines for faster payments",
-        "Built and mentored a team of 12 product managers"
+        "Led cross-functional teams across EMEA",
+        "Launched scalable payout solutions",
+        "Improved the financial infrastructure for the creator economy"
       ]
     },
     {
-      year: "2012-2015",
-      role: "Senior Product Manager",
-      company: "Sony Music",
-      description: "Managed digital distribution products and platforms, ensuring Sony artists' content reached global audiences efficiently.",
+      year: "Previous",
+      role: "Lead Product Manager, Insights & Royalties",
+      company: "SoundCloud",
+      description: "Spearheaded the development and launch of Fan-Powered Royalties, making SoundCloud the first major streaming platform to adopt a user-centric model. Collaborated with economists and engineers to model revenue shifts and execute a groundbreaking vision for fairer artist compensation.",
       achievements: [
-        "Increased digital distribution efficiency by 30%",
-        "Launched new music metadata management system",
-        "Established standardized content delivery processes"
+        "Launched Fan-Powered Royalties, the first user-centric model on a major platform",
+        "Collaborated with economists to model revenue shifts",
+        "Executed vision for fairer artist compensation"
       ]
     },
     {
-      year: "2008-2012",
-      role: "Product Manager",
-      company: "Tech Company",
-      description: "Started my product management journey developing software solutions for content management.",
+      year: "Previous",
+      role: "Director of Business Analysis",
+      company: "BMG",
+      description: "Led teams focused on royalty systems and technical services, enabling smarter licensing negotiations and operational excellence. Built bridges between technology, rights, and finance—bringing clarity to one of the industry's most complex value chains.",
       achievements: [
-        "Successfully launched 5 new product features",
-        "Improved user retention by 25%",
-        "Developed product roadmap methodology still in use today"
+        "Led royalty systems and technical services teams",
+        "Enabled smarter licensing negotiations",
+        "Connected technology, rights, and finance departments"
+      ]
+    },
+    {
+      year: "Ongoing",
+      role: "Instructor & Featured Speaker",
+      company: "Product School",
+      description: "For over three years, I've shared practical frameworks and real-world experiences with a global community of 1M+ product professionals. Whether through workshops or 1:1 coaching, I help PMs grow into confident, strategic leaders who drive impact at scale.",
+      achievements: [
+        "Shared frameworks with 1M+ product professionals",
+        "Conducted workshops and 1:1 coaching",
+        "Helped PMs develop into strategic leaders"
       ]
     }
   ];
@@ -114,7 +114,7 @@ const Achievements = () => {
         <section className="py-16 md:py-24 bg-blue-50">
           <div className="container">
             <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-12 text-center">
-              Career Journey
+              Career Journey (New Section)
             </h2>
             <div className="max-w-4xl mx-auto">
               {careerHighlights.map((highlight, index) => (
