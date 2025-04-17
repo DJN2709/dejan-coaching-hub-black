@@ -1,4 +1,3 @@
-
 import { Trophy, Award, Medal, BookOpen, Briefcase, Users } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -114,7 +113,7 @@ const Achievements = () => {
               {achievements.map((achievement, index) => (
                 <div
                   key={index}
-                  className="flex flex-col items-center text-center p-8 rounded-lg bg-black border border-white/10 hover:border-white/20"
+                  className="flex flex-col items-center text-center p-8 rounded-lg bg-black border border-white"
                 >
                   <div className="mb-4 p-4 bg-white/10 rounded-full">
                     {achievement.icon}
@@ -144,7 +143,7 @@ const Achievements = () => {
                         <p className="text-white/80 font-medium">{highlight.company}</p>
                       </div>
                     </div>
-                    <div className="md:w-2/3 bg-black border border-white/10 p-6 rounded-lg">
+                    <div className="md:w-2/3 bg-black border border-white p-6 rounded-lg">
                       <p className="mb-4 text-white/80">{highlight.description}</p>
                       <h4 className="font-medium mb-2 flex items-center gap-2 text-white">
                         <Award className="h-4 w-4 text-white" /> Key Achievements

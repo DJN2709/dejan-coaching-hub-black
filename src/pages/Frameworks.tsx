@@ -71,7 +71,6 @@ const Frameworks = () => {
     <div className="flex min-h-screen flex-col bg-black text-white">
       <Navbar />
       <main className="flex-1">
-        {/* Hero Section */}
         <section className="py-16 md:py-24 bg-black">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center">
@@ -85,7 +84,6 @@ const Frameworks = () => {
           </div>
         </section>
         
-        {/* Frameworks Overview */}
         <section className="py-16 md:py-24">
           <div className="container">
             <div className="space-y-24">
@@ -116,7 +114,7 @@ const Frameworks = () => {
                       Learn more <ArrowRight className="h-4 w-4" />
                     </Button>
                   </div>
-                  <div className="flex-1 rounded-lg overflow-hidden border border-white/10">
+                  <div className="flex-1 rounded-lg overflow-hidden border border-white">
                     <img 
                       src={framework.image} 
                       alt={framework.title} 
@@ -129,8 +127,7 @@ const Frameworks = () => {
           </div>
         </section>
         
-        {/* Implementation Process */}
-        <section className="py-16 md:py-24 bg-black border-y border-white/10">
+        <section className="py-16 md:py-24 bg-black border-y border-white">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center mb-12">
               <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4 text-white">
@@ -142,7 +139,7 @@ const Frameworks = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
               {implementationSteps.map((step, index) => (
-                <div key={index} className="bg-black p-6 rounded-lg border border-white/10">
+                <div key={index} className="bg-black p-6 rounded-lg border border-white">
                   <div className="text-4xl font-bold text-white mb-4">{step.number}</div>
                   <h3 className="text-xl font-bold mb-2 text-white">{step.title}</h3>
                   <p className="text-white/80">{step.description}</p>
@@ -152,7 +149,6 @@ const Frameworks = () => {
           </div>
         </section>
         
-        {/* Resources */}
         <section className="py-16 md:py-24">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center mb-12">
@@ -164,7 +160,7 @@ const Frameworks = () => {
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-              <div className="bg-black p-6 rounded-lg border border-white/10">
+              <div className="bg-black p-6 rounded-lg border border-white">
                 <div className="p-3 bg-white/10 rounded-full inline-flex mb-4">
                   <FileDown className="h-6 w-6 text-white" />
                 </div>
@@ -174,7 +170,7 @@ const Frameworks = () => {
                   <Download className="h-4 w-4" /> Download Template
                 </Button>
               </div>
-              <div className="bg-black p-6 rounded-lg border border-white/10">
+              <div className="bg-black p-6 rounded-lg border border-white">
                 <div className="p-3 bg-white/10 rounded-full inline-flex mb-4">
                   <FileDown className="h-6 w-6 text-white" />
                 </div>
@@ -184,7 +180,7 @@ const Frameworks = () => {
                   <Download className="h-4 w-4" /> Download Guide
                 </Button>
               </div>
-              <div className="bg-black p-6 rounded-lg border border-white/10">
+              <div className="bg-black p-6 rounded-lg border border-white">
                 <div className="p-3 bg-white/10 rounded-full inline-flex mb-4">
                   <FileDown className="h-6 w-6 text-white" />
                 </div>
@@ -198,10 +194,9 @@ const Frameworks = () => {
           </div>
         </section>
         
-        {/* CTA Section */}
-        <section className="py-16 md:py-24 bg-black border-t border-white/10">
+        <section className="py-16 md:py-24 bg-black border-t border-white">
           <div className="container">
-            <div className="max-w-4xl mx-auto p-8 md:p-12 bg-black border border-white/10 rounded-lg">
+            <div className="max-w-4xl mx-auto p-8 md:p-12 bg-black border border-white rounded-lg">
               <div className="flex flex-col md:flex-row gap-8 items-center">
                 <div className="flex-1">
                   <h2 className="font-display text-2xl md:text-3xl font-bold tracking-tight mb-4 text-white">
