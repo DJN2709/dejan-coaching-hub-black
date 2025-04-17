@@ -7,18 +7,33 @@ const Achievements = () => {
   const achievements = [
     {
       icon: <Briefcase className="h-8 w-8 text-primary" />,
-      title: "15+ Years Experience",
-      description: "Over 15 years of professional experience in product leadership across various industries."
+      title: "Accelerated Financial Processes",
+      description: "Optimized financial operations and reduced operational costs by identifying and eliminating process bottlenecks."
     },
     {
       icon: <Users className="h-8 w-8 text-primary" />,
-      title: "100+ Teams Coached",
-      description: "Successfully coached over 100 product teams to achieve their strategic objectives."
+      title: "User-Centric Royalties",
+      description: "Launched Fan-Powered Royalties at SoundCloud—the industry's first user-centric payout model. Empowered creators with greater transparency and control over their earnings."
     },
     {
       icon: <Trophy className="h-8 w-8 text-primary" />,
-      title: "20+ Product Launches",
-      description: "Led successful launches of over 20 products that impacted millions of users."
+      title: "Outcome-Driven Culture",
+      description: "Introduced product frameworks and monthly prioritization rituals, replacing rigid timelines with adaptive, value-driven planning."
+    },
+    {
+      icon: <Medal className="h-8 w-8 text-primary" />,
+      title: "Strategy at Scale",
+      description: "Developed and implemented strategies that accelerated experimentation and significantly reduced time to market."
+    },
+    {
+      icon: <BookOpen className="h-8 w-8 text-primary" />,
+      title: "Data-Led Discovery",
+      description: "Built frameworks to measure product impact using both quantitative and qualitative data—enabling better, faster decisions."
+    },
+    {
+      icon: <Award className="h-8 w-8 text-primary" />,
+      title: "Educator & Speaker",
+      description: "As a featured speaker and instructor at Product School, mentored aspiring product managers and equipped them with the tools to lead with clarity, confidence, and purpose."
     }
   ];
   
@@ -116,7 +131,7 @@ const Achievements = () => {
         <section className="py-16 md:py-24 bg-blue-50">
           <div className="container">
             <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-12 text-center">
-              Career Journey (New Section)
+              Career Journey
             </h2>
             <div className="max-w-4xl mx-auto">
               {careerHighlights.map((highlight, index) => (
