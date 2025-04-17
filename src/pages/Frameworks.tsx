@@ -1,4 +1,3 @@
-
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Component, LayoutGrid, Globe, Workflow, ArrowRight, Download, FileDown } from "lucide-react";
@@ -69,17 +68,17 @@ const Frameworks = () => {
   ];
 
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col bg-black text-white">
       <Navbar />
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="py-16 md:py-24 bg-gradient-to-b from-white to-blue-50">
+        <section className="py-16 md:py-24 bg-black">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6">
+              <h1 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-white">
                 Product Leadership Frameworks
               </h1>
-              <p className="text-xl text-muted-foreground">
+              <p className="text-xl text-white/80">
                 Battle-tested frameworks that I've developed and implemented across organizations to drive product success.
               </p>
             </div>
@@ -96,28 +95,28 @@ const Frameworks = () => {
                   className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} gap-10 md:gap-16 items-center`}
                 >
                   <div className="flex-1 space-y-6">
-                    <div className="inline-flex p-3 bg-blue-50 rounded-lg mb-4">
+                    <div className="inline-flex p-3 bg-white/10 rounded-lg mb-4">
                       {framework.icon}
                     </div>
-                    <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight">
+                    <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight text-white">
                       {framework.title}
                     </h2>
-                    <p className="text-lg text-muted-foreground">
+                    <p className="text-lg text-white/80">
                       {framework.description}
                     </p>
                     <div className="space-y-3">
                       {framework.features.map((feature, i) => (
                         <div key={i} className="flex items-center gap-2">
-                          <div className="h-1.5 w-1.5 rounded-full bg-primary"></div>
-                          <span>{feature}</span>
+                          <div className="h-1.5 w-1.5 rounded-full bg-white"></div>
+                          <span className="text-white/80">{feature}</span>
                         </div>
                       ))}
                     </div>
-                    <Button className="gap-2">
+                    <Button variant="outline" className="gap-2 text-white border-white hover:bg-white hover:text-black">
                       Learn more <ArrowRight className="h-4 w-4" />
                     </Button>
                   </div>
-                  <div className="flex-1 rounded-lg overflow-hidden border shadow-sm">
+                  <div className="flex-1 rounded-lg overflow-hidden border border-white/10">
                     <img 
                       src={framework.image} 
                       alt={framework.title} 
@@ -131,22 +130,22 @@ const Frameworks = () => {
         </section>
         
         {/* Implementation Process */}
-        <section className="py-16 md:py-24 bg-blue-50">
+        <section className="py-16 md:py-24 bg-black border-y border-white/10">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center mb-12">
-              <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4">
+              <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4 text-white">
                 Framework Implementation Process
               </h2>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-lg text-white/80">
                 A structured approach to adapt and implement these frameworks in your organization
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
               {implementationSteps.map((step, index) => (
-                <div key={index} className="bg-white p-6 rounded-lg shadow-sm border">
-                  <div className="text-4xl font-bold text-primary mb-4">{step.number}</div>
-                  <h3 className="text-xl font-bold mb-2">{step.title}</h3>
-                  <p className="text-muted-foreground">{step.description}</p>
+                <div key={index} className="bg-black p-6 rounded-lg border border-white/10">
+                  <div className="text-4xl font-bold text-white mb-4">{step.number}</div>
+                  <h3 className="text-xl font-bold mb-2 text-white">{step.title}</h3>
+                  <p className="text-white/80">{step.description}</p>
                 </div>
               ))}
             </div>
@@ -157,41 +156,41 @@ const Frameworks = () => {
         <section className="py-16 md:py-24">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center mb-12">
-              <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4">
+              <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4 text-white">
                 Framework Resources
               </h2>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-lg text-white/80">
                 Download templates, guides, and tools to start implementing these frameworks
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-              <div className="bg-white p-6 rounded-lg shadow-sm border">
-                <div className="p-3 bg-blue-50 rounded-full inline-flex mb-4">
-                  <FileDown className="h-6 w-6 text-primary" />
+              <div className="bg-black p-6 rounded-lg border border-white/10">
+                <div className="p-3 bg-white/10 rounded-full inline-flex mb-4">
+                  <FileDown className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">Product Competency Assessment</h3>
-                <p className="text-muted-foreground mb-4">A self-assessment tool to evaluate your product management skills across 12 dimensions.</p>
-                <Button variant="outline" className="w-full gap-2">
+                <h3 className="text-xl font-bold mb-2 text-white">Product Competency Assessment</h3>
+                <p className="text-white/80 mb-4">A self-assessment tool to evaluate your product management skills across 12 dimensions.</p>
+                <Button variant="outline" className="w-full gap-2 text-white border-white hover:bg-white hover:text-black">
                   <Download className="h-4 w-4" /> Download Template
                 </Button>
               </div>
-              <div className="bg-white p-6 rounded-lg shadow-sm border">
-                <div className="p-3 bg-blue-50 rounded-full inline-flex mb-4">
-                  <FileDown className="h-6 w-6 text-primary" />
+              <div className="bg-black p-6 rounded-lg border border-white/10">
+                <div className="p-3 bg-white/10 rounded-full inline-flex mb-4">
+                  <FileDown className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">Royalty Platform Guide</h3>
-                <p className="text-muted-foreground mb-4">Comprehensive guide for building and managing efficient royalty distribution systems.</p>
-                <Button variant="outline" className="w-full gap-2">
+                <h3 className="text-xl font-bold mb-2 text-white">Royalty Platform Guide</h3>
+                <p className="text-white/80 mb-4">Comprehensive guide for building and managing efficient royalty distribution systems.</p>
+                <Button variant="outline" className="w-full gap-2 text-white border-white hover:bg-white hover:text-black">
                   <Download className="h-4 w-4" /> Download Guide
                 </Button>
               </div>
-              <div className="bg-white p-6 rounded-lg shadow-sm border">
-                <div className="p-3 bg-blue-50 rounded-full inline-flex mb-4">
-                  <FileDown className="h-6 w-6 text-primary" />
+              <div className="bg-black p-6 rounded-lg border border-white/10">
+                <div className="p-3 bg-white/10 rounded-full inline-flex mb-4">
+                  <FileDown className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">Leadership Accelerator Workbook</h3>
-                <p className="text-muted-foreground mb-4">Step-by-step workbook for developing product leadership capabilities.</p>
-                <Button variant="outline" className="w-full gap-2">
+                <h3 className="text-xl font-bold mb-2 text-white">Leadership Accelerator Workbook</h3>
+                <p className="text-white/80 mb-4">Step-by-step workbook for developing product leadership capabilities.</p>
+                <Button variant="outline" className="w-full gap-2 text-white border-white hover:bg-white hover:text-black">
                   <Download className="h-4 w-4" /> Download Workbook
                 </Button>
               </div>
@@ -200,23 +199,23 @@ const Frameworks = () => {
         </section>
         
         {/* CTA Section */}
-        <section className="py-16 md:py-24 bg-blue-50">
+        <section className="py-16 md:py-24 bg-black border-t border-white/10">
           <div className="container">
-            <div className="max-w-4xl mx-auto p-8 md:p-12 bg-white rounded-lg shadow-md">
+            <div className="max-w-4xl mx-auto p-8 md:p-12 bg-black border border-white/10 rounded-lg">
               <div className="flex flex-col md:flex-row gap-8 items-center">
                 <div className="flex-1">
-                  <h2 className="font-display text-2xl md:text-3xl font-bold tracking-tight mb-4">
+                  <h2 className="font-display text-2xl md:text-3xl font-bold tracking-tight mb-4 text-white">
                     Need Help Implementing These Frameworks?
                   </h2>
-                  <p className="text-muted-foreground mb-6">
+                  <p className="text-white/80 mb-6">
                     Get personalized guidance through coaching sessions tailored to your specific organizational challenges.
                   </p>
                   <Link to="/booking">
-                    <Button size="lg">Book a Coaching Session</Button>
+                    <Button className="bg-white text-black hover:bg-white/90" size="lg">Book a Coaching Session</Button>
                   </Link>
                 </div>
                 <div className="flex-1 flex justify-center">
-                  <Workflow className="h-40 w-40 text-primary opacity-20" />
+                  <Workflow className="h-40 w-40 text-white opacity-20" />
                 </div>
               </div>
             </div>

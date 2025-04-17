@@ -57,17 +57,17 @@ const Booking = () => {
   ];
 
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col bg-black text-white">
       <Navbar />
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="py-16 md:py-24 bg-gradient-to-b from-white to-blue-50">
+        <section className="py-16 md:py-24 bg-black">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6">
+              <h1 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-white">
                 Book a Coaching Session
               </h1>
-              <p className="text-xl text-muted-foreground">
+              <p className="text-xl text-white/80">
                 Take your product leadership skills to the next level with personalized coaching and guidance.
               </p>
             </div>
@@ -78,52 +78,48 @@ const Booking = () => {
         <section className="py-16 md:py-20">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center mb-12">
-              <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4">
+              <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4 text-white">
                 Coaching Services
               </h2>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-lg text-white/80">
                 Choose the coaching format that best fits your needs and goals
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {coachingServices.map((service, index) => (
-                <Card key={index} className="flex flex-col h-full">
+                <Card key={index} className="flex flex-col h-full bg-black border-white/10">
                   <CardHeader>
                     <div className="flex justify-between items-start">
-                      <div className="p-2 bg-blue-50 rounded-lg">
+                      <div className="p-2 bg-white/10 rounded-lg">
                         {service.icon}
                       </div>
                       <div className="flex flex-col items-end">
-                        <p className="text-sm text-muted-foreground flex items-center gap-1">
+                        <p className="text-sm text-white/80 flex items-center gap-1">
                           <Clock className="h-3 w-3" /> {service.duration}
                         </p>
-                        <p className="text-xl font-bold text-primary">{service.price}</p>
+                        <p className="text-xl font-bold text-white">{service.price}</p>
                       </div>
                     </div>
-                    <CardTitle className="mt-4">{service.title}</CardTitle>
-                    <CardDescription>{service.description}</CardDescription>
+                    <CardTitle className="mt-4 text-white">{service.title}</CardTitle>
+                    <CardDescription className="text-white/80">{service.description}</CardDescription>
                   </CardHeader>
                   <CardContent className="flex-grow">
                     <ul className="space-y-2">
                       {service.features.map((feature, i) => (
                         <li key={i} className="flex items-start gap-2">
-                          <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                          <span>{feature}</span>
+                          <CheckCircle2 className="h-5 w-5 text-white shrink-0 mt-0.5" />
+                          <span className="text-white/80">{feature}</span>
                         </li>
                       ))}
                     </ul>
                   </CardContent>
                   <CardFooter>
-                    {service.bookingUrl ? (
-                      <Button 
-                        className="w-full" 
-                        onClick={() => window.open(service.bookingUrl, '_blank')}
-                      >
-                        Book Now
-                      </Button>
-                    ) : (
-                      <Button className="w-full">Book Now</Button>
-                    )}
+                    <Button 
+                      className="w-full bg-white text-black hover:bg-white/90" 
+                      onClick={() => window.open(service.bookingUrl, '_blank')}
+                    >
+                      Book Now
+                    </Button>
                   </CardFooter>
                 </Card>
               ))}

@@ -1,3 +1,4 @@
+
 import { Trophy, Award, Medal, BookOpen, Briefcase, Users } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -86,17 +87,17 @@ const Achievements = () => {
   ];
 
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col bg-black text-white">
       <Navbar />
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="py-16 md:py-24 bg-gradient-to-b from-white to-blue-50">
+        <section className="py-16 md:py-24 bg-black">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6">
+              <h1 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-white">
                 Achievements & Experience
               </h1>
-              <p className="text-xl text-muted-foreground">
+              <p className="text-xl text-white/80">
                 A journey through my career milestones, accomplishments, and the impact I've made in product leadership.
               </p>
             </div>
@@ -106,20 +107,20 @@ const Achievements = () => {
         {/* Key Achievements */}
         <section className="py-16 md:py-20">
           <div className="container">
-            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-12 text-center">
+            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-12 text-center text-white">
               Key Achievements
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {achievements.map((achievement, index) => (
                 <div
                   key={index}
-                  className="flex flex-col items-center text-center p-8 rounded-lg bg-white border shadow-sm"
+                  className="flex flex-col items-center text-center p-8 rounded-lg bg-black border border-white/10 hover:border-white/20"
                 >
-                  <div className="mb-4 p-4 bg-blue-50 rounded-full">
+                  <div className="mb-4 p-4 bg-white/10 rounded-full">
                     {achievement.icon}
                   </div>
-                  <h3 className="text-xl font-bold mb-2">{achievement.title}</h3>
-                  <p className="text-muted-foreground">{achievement.description}</p>
+                  <h3 className="text-xl font-bold mb-2 text-white">{achievement.title}</h3>
+                  <p className="text-white/80">{achievement.description}</p>
                 </div>
               ))}
             </div>
@@ -127,9 +128,9 @@ const Achievements = () => {
         </section>
         
         {/* Career Timeline */}
-        <section className="py-16 md:py-24 bg-blue-50">
+        <section className="py-16 md:py-24 bg-black">
           <div className="container">
-            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-12 text-center">
+            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-12 text-center text-white">
               Career Journey
             </h2>
             <div className="max-w-4xl mx-auto">
@@ -138,19 +139,19 @@ const Achievements = () => {
                   <div className="flex flex-col md:flex-row gap-6">
                     <div className="md:w-1/3">
                       <div className="sticky top-20">
-                        <span className="block text-sm font-medium text-primary mb-1">{highlight.year}</span>
-                        <h3 className="text-xl font-bold mb-1">{highlight.role}</h3>
-                        <p className="text-muted-foreground font-medium">{highlight.company}</p>
+                        <span className="block text-sm font-medium text-white/80 mb-1">{highlight.year}</span>
+                        <h3 className="text-xl font-bold mb-1 text-white">{highlight.role}</h3>
+                        <p className="text-white/80 font-medium">{highlight.company}</p>
                       </div>
                     </div>
-                    <div className="md:w-2/3 bg-white p-6 rounded-lg shadow-sm">
-                      <p className="mb-4">{highlight.description}</p>
-                      <h4 className="font-medium mb-2 flex items-center gap-2">
-                        <Award className="h-4 w-4 text-primary" /> Key Achievements
+                    <div className="md:w-2/3 bg-black border border-white/10 p-6 rounded-lg">
+                      <p className="mb-4 text-white/80">{highlight.description}</p>
+                      <h4 className="font-medium mb-2 flex items-center gap-2 text-white">
+                        <Award className="h-4 w-4 text-white" /> Key Achievements
                       </h4>
                       <ul className="list-disc pl-5 space-y-1">
                         {highlight.achievements.map((achievement, i) => (
-                          <li key={i} className="text-muted-foreground">{achievement}</li>
+                          <li key={i} className="text-white/80">{achievement}</li>
                         ))}
                       </ul>
                     </div>
