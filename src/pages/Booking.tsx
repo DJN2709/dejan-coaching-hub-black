@@ -130,58 +130,6 @@ const Booking = () => {
             </div>
           </div>
         </section>
-        
-        {/* Testimonials */}
-        <section className="py-16 md:py-24">
-          <div className="container">
-            <div className="max-w-3xl mx-auto text-center mb-12">
-              <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4">
-                Client Feedback
-              </h2>
-              <p className="text-lg text-muted-foreground">
-                What others say about their coaching experience
-              </p>
-            </div>
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
-              <div className="bg-white p-6 rounded-lg shadow-sm border">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-blue-100 rounded-full mr-4"></div>
-                  <div>
-                    <p className="font-bold">Alex Rodriguez</p>
-                    <p className="text-sm text-muted-foreground">Product Director</p>
-                  </div>
-                </div>
-                <p className="italic">
-                  "The coaching sessions with Dejan transformed my approach to product leadership. I gained practical frameworks that I could immediately apply to my team."
-                </p>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-sm border">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-blue-100 rounded-full mr-4"></div>
-                  <div>
-                    <p className="font-bold">Priya Sharma</p>
-                    <p className="text-sm text-muted-foreground">CPO at Startup</p>
-                  </div>
-                </div>
-                <p className="italic">
-                  "Dejan's coaching helped me navigate the transition from product manager to product leader. His strategic insights were invaluable for our organization."
-                </p>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-sm border">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-blue-100 rounded-full mr-4"></div>
-                  <div>
-                    <p className="font-bold">Marcus Johnson</p>
-                    <p className="text-sm text-muted-foreground">Product Team Lead</p>
-                  </div>
-                </div>
-                <p className="italic">
-                  "Our team workshop with Dejan created alignment and clarity that we had been missing. His frameworks helped us solve longstanding challenges."
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
       </main>
       <Footer />
     </div>
