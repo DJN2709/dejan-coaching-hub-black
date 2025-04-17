@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
@@ -32,7 +33,7 @@ const Hero = () => {
               <img 
                 src="/lovable-uploads/776095df-6ce7-4ebb-8318-ade789fad45e.png" 
                 alt="Dejan Krstic - Product Leadership Coach" 
-                className="object-cover w-full h-full brightness-90 contrast-105"
+                className="object-cover w-full h-full brightness-90 contrast-105 grayscale"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
             </div>
