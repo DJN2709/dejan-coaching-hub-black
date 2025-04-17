@@ -1,7 +1,5 @@
-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { QuoteIcon } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -29,14 +27,15 @@ const Hero = () => {
           </div>
         </div>
         <div className="flex-1 relative">
-          <div className="relative w-full h-[400px] bg-black rounded-lg overflow-hidden shadow-lg">
+          <div className="relative w-full h-[400px] rounded-xl overflow-hidden border border-white/10 shadow-[0_8px_32px_rgba(255,255,255,0.1)]">
             <img 
               src="/lovable-uploads/776095df-6ce7-4ebb-8318-ade789fad45e.png" 
               alt="Dejan Krstic - Product Leadership Coach" 
-              className="object-cover w-full h-full"
+              className="object-cover w-full h-full brightness-90 contrast-105"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
           </div>
-          <p className="mt-4 text-sm italic text-white/70 text-center">
+          <p className="mt-6 text-sm italic text-white/70 text-center max-w-[90%] mx-auto">
             I've built and launched products across both B2C and B2B—some that scaled beautifully, and others that failed gloriously. Each experience sharpened my understanding of what it truly takes to create products that solve real problems and drive impact.
           </p>
         </div>
