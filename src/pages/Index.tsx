@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { ArrowRight, Award, Code, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -46,12 +45,9 @@ const Index = () => {
                   I help product teams move faster, think clearer, and build smarter—by combining deep domain expertise with battle-tested product frameworks and a people-first approach. With over 12 years of product leadership experience in the music-tech space, I've worked across B2C and B2B, helping launch, scale, and sometimes gloriously fail products. Every step brought its own lesson, and I use that knowledge today to empower others to do better work.
                 </p>
                 <h3 className="text-xl font-semibold mb-4">What I Do</h3>
-                <ul className="text-md text-muted-foreground space-y-2 text-left list-disc pl-6 mb-8">
-                  <li>Build high-performing product teams with a culture of ownership, trust, and experimentation.</li>
-                  <li>Coach teams to make outcome-driven decisions using OKRs, value stream mapping, and discovery best practices.</li>
-                  <li>Design product strategies that align user needs with business goals.</li>
-                  <li>Craft operationally efficient solutions for highly complex financial and rights-based ecosystems.</li>
-                </ul>
+                <p className="text-md text-muted-foreground mb-8">
+                  I focus on building high-performing product teams with a culture of ownership, trust, and experimentation. My approach involves coaching teams to make outcome-driven decisions using OKRs, value stream mapping, and discovery best practices. I specialize in designing product strategies that align user needs with business goals, and I craft operationally efficient solutions for highly complex financial and rights-based ecosystems.
+                </p>
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
