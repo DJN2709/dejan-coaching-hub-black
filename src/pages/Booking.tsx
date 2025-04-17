@@ -48,13 +48,14 @@ const Booking = () => {
       title: "1:1 Coaching",
       description: "Personalized coaching sessions focused on your specific challenges and goals.",
       duration: "60 min",
-      price: "$250",
+      price: "€110",
       features: [
         "Tailored guidance",
         "Action plan development",
         "Follow-up resources",
         "Direct access via email"
-      ]
+      ],
+      bookingUrl: "https://booking.setmore.com/scheduleappointment/9307d7e5-e172-46a0-84e0-6cee4d029640/services/cc0e3f23-6603-4b8c-a323-8972071236ba"
     },
     {
       icon: <Video className="h-6 w-6 text-primary" />,
@@ -142,7 +143,16 @@ const Booking = () => {
                     </ul>
                   </CardContent>
                   <CardFooter>
-                    <Button className="w-full">Book Now</Button>
+                    {service.bookingUrl ? (
+                      <Button 
+                        className="w-full" 
+                        onClick={() => window.open(service.bookingUrl, '_blank')}
+                      >
+                        Book Now
+                      </Button>
+                    ) : (
+                      <Button className="w-full">Book Now</Button>
+                    )}
                   </CardFooter>
                 </Card>
               ))}
