@@ -28,7 +28,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="flex-1 flex flex-col mt-2">
-          <div className="relative w-[500px] h-[300px]">
+          <div className="relative w-[480px] h-[300px]">
             <div className="relative w-full h-full rounded-2xl overflow-hidden border border-white/10 shadow-[0_8px_32px_rgba(255,255,255,0.1)]">
               <img 
                 src="/lovable-uploads/776095df-6ce7-4ebb-8318-ade789fad45e.png" 
