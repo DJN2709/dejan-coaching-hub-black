@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
@@ -37,8 +38,8 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
             </div>
           </div>
-          <p className="text-base italic text-white/70 mt-4 w-[480px]">
-            "I've built and launched products across both B2C and B2B—some that scaled beautifully, and others that failed gloriously. Each experience sharpened my understanding of what it truly takes to create products that solve real problems and drive impact."
+          <p className="text-sm italic text-white/70 mt-4 w-[480px]">
+            I've built and launched products across both B2C and B2B—some that scaled beautifully, and others that failed gloriously. Each experience sharpened my understanding of what it truly takes to create products that solve real problems and drive impact.
           </p>
         </div>
       </div>
@@ -47,3 +48,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
