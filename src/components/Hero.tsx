@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
@@ -27,7 +28,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="flex-1 relative">
-          <div className="relative w-full h-[400px] rounded-xl overflow-hidden border border-white/10 shadow-[0_8px_32px_rgba(255,255,255,0.1)]">
+          <div className="relative w-full h-[400px] rounded-2xl overflow-hidden border border-white/10 shadow-[0_8px_32px_rgba(255,255,255,0.1)]">
             <img 
               src="/lovable-uploads/776095df-6ce7-4ebb-8318-ade789fad45e.png" 
               alt="Dejan Krstic - Product Leadership Coach" 
