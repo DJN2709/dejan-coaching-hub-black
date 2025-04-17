@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 const Hero = () => {
   return (
     <section className="py-12 md:py-20 lg:py-32 bg-black">
-      <div className="container flex flex-col md:flex-row items-center gap-8 md:gap-16">
+      <div className="container flex flex-col md:flex-row items-start gap-8 md:gap-16">
         <div className="flex-1 space-y-6">
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white">
             Product Leadership <span className="text-white">Coaching</span>
@@ -27,16 +27,18 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-        <div className="flex-1 relative w-[400px] h-[300px]">
-          <div className="relative w-full h-full rounded-2xl overflow-hidden border border-white/10 shadow-[0_8px_32px_rgba(255,255,255,0.1)]">
-            <img 
-              src="/lovable-uploads/776095df-6ce7-4ebb-8318-ade789fad45e.png" 
-              alt="Dejan Krstic - Product Leadership Coach" 
-              className="object-cover w-full h-full brightness-90 contrast-105"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+        <div className="flex-1 flex flex-col mt-2">
+          <div className="relative w-[400px] h-[300px]">
+            <div className="relative w-full h-full rounded-2xl overflow-hidden border border-white/10 shadow-[0_8px_32px_rgba(255,255,255,0.1)]">
+              <img 
+                src="/lovable-uploads/776095df-6ce7-4ebb-8318-ade789fad45e.png" 
+                alt="Dejan Krstic - Product Leadership Coach" 
+                className="object-cover w-full h-full brightness-90 contrast-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+            </div>
           </div>
-          <p className="mt-6 text-sm italic text-white/70 text-center max-w-[90%] mx-auto">
+          <p className="text-sm italic text-white/70 mt-16 max-w-[90%]">
             I've built and launched products across both B2C and B2B—some that scaled beautifully, and others that failed gloriously. Each experience sharpened my understanding of what it truly takes to create products that solve real problems and drive impact.
           </p>
         </div>
