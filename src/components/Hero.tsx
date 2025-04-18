@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
@@ -9,7 +8,7 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
           <div className="flex-1 space-y-4 md:space-y-6 text-center md:text-left animate-fade-in">
             <h1 className="font-display text-3xl md:text-4xl lg:text-6xl font-bold tracking-tight text-white">
-              Product Leadership <span className="gradient-text">Coaching</span>
+              Product Leadership <span className="bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">Coaching</span>
             </h1>
             <div className="space-y-4">
               <p className="text-lg md:text-xl text-white/80 max-w-prose">
@@ -24,7 +23,7 @@ const Hero = () => {
                 <Button 
                   variant="outline"
                   size="lg" 
-                  className="w-full sm:w-auto transform transition-all duration-300 hover:scale-105 active:scale-95 hover:shadow-[0_0_35px_rgba(255,255,255,0.4)] bg-white/10 backdrop-blur-sm border-white/20 glow-on-hover"
+                  className="w-full sm:w-auto transform transition-all duration-300 hover:scale-105 active:scale-95 hover:shadow-[0_0_25px_rgba(255,255,255,0.3)] bg-white/10 backdrop-blur-sm border-white/20"
                 >
                   Book a Coaching Session
                 </Button>
@@ -33,7 +32,7 @@ const Hero = () => {
                 <Button 
                   variant="outline" 
                   size="lg"
-                  className="w-full sm:w-auto transform transition-all duration-300 hover:scale-105 active:scale-95 hover:shadow-[0_0_35px_rgba(255,255,255,0.4)] bg-white/10 backdrop-blur-sm border-white/20 glow-on-hover"
+                  className="w-full sm:w-auto transform transition-all duration-300 hover:scale-105 active:scale-95 hover:shadow-[0_0_25px_rgba(255,255,255,0.3)] bg-white/10 backdrop-blur-sm border-white/20"
                 >
                   Explore Frameworks
                 </Button>
