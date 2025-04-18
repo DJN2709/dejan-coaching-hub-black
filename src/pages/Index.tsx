@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { ArrowRight, Award, Code, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -35,9 +34,9 @@ const Index = () => {
         <Hero />
         
         {/* Features Section */}
-        <section className="py-8 md:py-16 lg:py-24 bg-black px-4 md:px-0">
+        <section className="py-8 md:py-16 lg:py-24 bg-gradient-to-b from-black via-gray-900 to-black px-4 md:px-0">
           <div className="container max-w-7xl mx-auto">
-            <div className="text-center mb-8 md:mb-12">
+            <div className="text-center mb-8 md:mb-12 animate-fade-in">
               <h2 className="font-display text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight mb-4 text-white">
                 How I Can Help You
               </h2>
@@ -62,7 +61,7 @@ const Index = () => {
               {features.map((feature, index) => (
                 <div 
                   key={index} 
-                  className="flex flex-col items-center text-center p-4 md:p-6 bg-black rounded-lg border border-white transition-colors"
+                  className="feature-card flex flex-col items-center text-center p-4 md:p-6 bg-black/50 backdrop-blur-sm rounded-lg border border-white/20 transition-all duration-300"
                 >
                   <div className="mb-4 p-3 bg-white/10 rounded-full">
                     {feature.icon}
@@ -70,7 +69,7 @@ const Index = () => {
                   <h3 className="text-lg md:text-xl font-bold mb-2 text-white">{feature.title}</h3>
                   <p className="text-sm md:text-base text-white/80 mb-4 flex-1">{feature.description}</p>
                   <Link to={feature.link}>
-                    <Button variant="outline" className="gap-1 group text-sm md:text-base">
+                    <Button variant="outline" className="gap-1 group text-sm md:text-base hover:bg-white/10 border-white/20 glow-on-hover">
                       Learn more <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                     </Button>
                   </Link>
@@ -81,9 +80,9 @@ const Index = () => {
         </section>
         
         {/* CTA Section */}
-        <section className="py-8 md:py-16 lg:py-24 bg-black px-4 md:px-0">
+        <section className="py-8 md:py-16 lg:py-24 bg-gradient-to-t from-black via-gray-900 to-black px-4 md:px-0">
           <div className="container max-w-4xl mx-auto">
-            <div className="text-center">
+            <div className="text-center animate-fade-in">
               <h2 className="font-display text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight mb-4 text-white">
                 Ready to Elevate Your Product Leadership?
               </h2>
@@ -91,7 +90,7 @@ const Index = () => {
                 Book a coaching session with me to discuss your specific challenges and goals. Let's work together to take your product leadership skills to the next level.
               </p>
               <Link to="/booking">
-                <Button variant="outline" size="lg" className="gap-2 group bg-white text-sm md:text-base">
+                <Button variant="outline" size="lg" className="gap-2 group bg-white/10 backdrop-blur-sm border-white/20 text-sm md:text-base hover:bg-white/20 glow-on-hover">
                   Book a Session <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>

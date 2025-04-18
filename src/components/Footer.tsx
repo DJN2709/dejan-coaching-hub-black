@@ -14,16 +14,16 @@ const Footer = () => {
             </p>
           </div>
           <nav className="flex flex-wrap items-center justify-center gap-4">
-            <Link to="/" className="text-sm font-medium text-white/70 hover:text-white transition-colors duration-200 hover:scale-105 transform">
+            <Link to="/" className="text-sm font-medium text-white/70 hover:text-white transition-colors duration-200 hover:scale-105 transform glow-on-hover px-2 py-1 rounded-md">
               Home
             </Link>
-            <Link to="/achievements" className="text-sm font-medium text-white/70 hover:text-white transition-colors duration-200 hover:scale-105 transform">
+            <Link to="/achievements" className="text-sm font-medium text-white/70 hover:text-white transition-colors duration-200 hover:scale-105 transform glow-on-hover px-2 py-1 rounded-md">
               Achievements
             </Link>
-            <Link to="/frameworks" className="text-sm font-medium text-white/70 hover:text-white transition-colors duration-200 hover:scale-105 transform">
+            <Link to="/frameworks" className="text-sm font-medium text-white/70 hover:text-white transition-colors duration-200 hover:scale-105 transform glow-on-hover px-2 py-1 rounded-md">
               Frameworks
             </Link>
-            <Link to="/booking" className="text-sm font-medium text-white/70 hover:text-white transition-colors duration-200 hover:scale-105 transform">
+            <Link to="/booking" className="text-sm font-medium text-white/70 hover:text-white transition-colors duration-200 hover:scale-105 transform glow-on-hover px-2 py-1 rounded-md">
               Coaching
             </Link>
           </nav>

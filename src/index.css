@@ -1,3 +1,4 @@
+
 @import url('https://use.typekit.net/xxx.css');
 
 @tailwind base;
@@ -20,8 +21,8 @@
 }
 
 body {
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
   font-feature-settings: 'ss01' on, 'ss02' on; 
   font-variant-numeric: lining-nums;
   letter-spacing: -0.015em;
@@ -32,14 +33,47 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Optional: Additional typography refinements */
+/* Typography refinements */
 h1, h2, h3, h4, h5, h6 {
-  color: black;
+  color: white;
   font-weight: 500;
   letter-spacing: -0.025em;
   line-height: 1.2;
 }
 
 a {
-  color: black;
+  color: white;
 }
+
+/* Card hover effects */
+.feature-card {
+  transition: all 0.3s ease-in-out;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(255, 255, 255, 0.1);
+}
+
+/* Gradient backgrounds */
+.gradient-bg-main {
+  background: linear-gradient(to bottom right, #000000, #1a1a1a, #000000);
+}
+
+.gradient-bg-section {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,1));
+}
+
+/* Glow effects */
+.glow-on-hover:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(90deg, #9b87f5, #7E69AB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
