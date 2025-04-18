@@ -9,19 +9,19 @@ import Hero from "@/components/Hero";
 const Index = () => {
   const features = [
     {
-      icon: <Award className="h-10 w-10 text-primary" />,
+      icon: <Award className="h-10 w-10 bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text" />,
       title: "Achievements",
       description: "Explore my professional journey, accomplishments, and the impact I've made across various organizations.",
       link: "/achievements"
     },
     {
-      icon: <Code className="h-10 w-10 text-primary" />,
+      icon: <Code className="h-10 w-10 bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text" />,
       title: "Frameworks",
       description: "Discover the product management frameworks I've developed and implemented to drive success.",
       link: "/frameworks"
     },
     {
-      icon: <Calendar className="h-10 w-10 text-primary" />,
+      icon: <Calendar className="h-10 w-10 bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text" />,
       title: "Coaching",
       description: "Book personalized coaching sessions to accelerate your product leadership growth.",
       link: "/booking"
@@ -70,7 +70,7 @@ const Index = () => {
                   <h3 className="text-lg md:text-xl font-bold mb-2 text-white">{feature.title}</h3>
                   <p className="text-sm md:text-base text-white/80 mb-4 flex-1">{feature.description}</p>
                   <Link to={feature.link}>
-                    <Button variant="outline" className="gap-1 group text-sm md:text-base">
+                    <Button variant="outline" className="gap-1 group text-sm md:text-base bg-gradient-to-r from-blue-500 to-purple-500 text-white border-transparent">
                       Learn more <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                     </Button>
                   </Link>
@@ -91,7 +91,7 @@ const Index = () => {
                 Book a coaching session with me to discuss your specific challenges and goals. Let's work together to take your product leadership skills to the next level.
               </p>
               <Link to="/booking">
-                <Button variant="outline" size="lg" className="gap-2 group bg-white text-sm md:text-base">
+                <Button variant="outline" size="lg" className="gap-2 group text-sm md:text-base bg-gradient-to-r from-blue-500 to-purple-500 text-white border-transparent">
                   Book a Session <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
