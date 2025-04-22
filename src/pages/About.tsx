@@ -38,10 +38,10 @@ const About = () => {
           <div className="container">
             <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start gap-8 md:gap-12">
               <div className="flex-1 px-8">
-                <h1 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
+                <h1 className="font-display text-5xl md:text-6xl font-bold tracking-tight mb-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
                   About Me
                 </h1>
-                <p className="text-2xl text-white/80 leading-relaxed">
+                <p className="text-2xl text-white/80 leading-relaxed mb-8">
                   I've built and launched products across both B2C and B2B—some scaled beautifully, and others failed gloriously. Each experience sharpened my understanding of what it truly takes to create products that solve real problems and drive impact.
                 </p>
               </div>
