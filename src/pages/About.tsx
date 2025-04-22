@@ -1,3 +1,4 @@
+
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Award, Briefcase, BookOpen, Users } from "lucide-react";
@@ -48,7 +49,7 @@ const About = () => {
                 <img 
                   src="/public/lovable-uploads/7de7680b-310e-4003-8132-ca5e1671b114.png"
                   alt="Dejan Krstic"
-                  className="rounded-xl shadow-xl w-full max-w-xl object-cover aspect-[4/3]"
+                  className="rounded-xl shadow-xl w-full max-w-xl object-cover aspect-[3/2]"
                 />
               </div>
             </div>
@@ -105,3 +106,4 @@ const About = () => {
 };
 
 export default About;
+
