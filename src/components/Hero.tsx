@@ -51,7 +51,7 @@ const Hero = () => {
               </Link>
             </div>
           </div>
-          <div className="flex-1 max-w-md">
+          <div className="flex-1 max-w-md ml-auto md:-ml-16 lg:-ml-24">
             <div className="relative">
               <div className="absolute -inset-1 bg-gradient-to-b from-blue-500/20 via-transparent to-transparent blur-xl opacity-50" />
               <img 
