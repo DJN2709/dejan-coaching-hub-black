@@ -44,17 +44,17 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-t from-purple-500/20 via-transparent to-transparent rounded-xl" />
               <div className="absolute -inset-1 bg-gradient-to-b from-blue-500/20 via-transparent to-transparent blur-xl opacity-50" />
-              <div className="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-black/80 via-black/40 to-transparent rounded-b-xl" />
-              <div className="absolute -left-8 -right-8 top-1/2 h-16 bg-gradient-to-r from-purple-500/10 via-blue-500/20 to-purple-500/10 blur-2xl transform -skew-y-3" />
+              <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black/80 via-black/40 to-transparent rounded-b-xl" />
+              <div className="absolute -left-8 -right-8 top-1/2 h-32 bg-gradient-to-r from-purple-500/10 via-blue-500/20 to-purple-500/10 blur-2xl transform -skew-y-3" />
               <div className="absolute inset-0 bg-black/5 mix-blend-overlay rounded-xl" />
               <img 
-                src="/public/lovable-uploads/665b0526-8de3-4037-866d-62410192cb9c.png" 
+                src="/public/lovable-uploads/45fb9b3b-e6bf-41fd-be81-2fbb51b94e1f.png" 
                 alt="Product Leader"
                 className="rounded-xl shadow-2xl w-full object-contain aspect-[4/3] relative z-10"
               />
-              <div className="absolute -bottom-1 -left-4 -right-4 h-2 bg-black/80 blur-xl rounded-full transform rotate-1" />
-              <div className="absolute -bottom-0.5 -left-8 -right-8 h-0.5 bg-purple-500/30 blur-sm" />
-              <div className="absolute -bottom-1 -left-8 -right-8 h-0.5 bg-blue-500/20 blur-sm" />
+              <div className="absolute -bottom-4 -left-4 -right-4 h-8 bg-black/80 blur-xl rounded-full transform rotate-1" />
+              <div className="absolute -bottom-2 -left-8 -right-8 h-1 bg-purple-500/30 blur-sm" />
+              <div className="absolute -bottom-3 -left-8 -right-8 h-1 bg-blue-500/20 blur-sm" />
             </div>
           </div>
         </div>
