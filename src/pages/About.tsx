@@ -1,4 +1,3 @@
-
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Award, Briefcase, BookOpen, Users } from "lucide-react";
@@ -35,9 +34,9 @@ const About = () => {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="py-16 md:py-24 bg-black">
-          <div className="container">
+          <div className="container px-4 md:px-6">
             <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start gap-8 md:gap-12">
-              <div className="flex-1 px-4 md:px-8">
+              <div className="flex-1">
                 <h1 className="font-display text-5xl md:text-6xl font-bold tracking-tight mb-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
                   About Me
                 </h1>
@@ -106,4 +105,3 @@ const About = () => {
 };
 
 export default About;
-
