@@ -36,8 +36,8 @@ const About = () => {
         {/* Hero Section */}
         <section className="py-16 md:py-24 bg-black">
           <div className="container">
-            <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12">
-              <div className="flex-1">
+            <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start gap-8 md:gap-12">
+              <div className="flex-1 px-8">
                 <h1 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
                   About Me
                 </h1>
