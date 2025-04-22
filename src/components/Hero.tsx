@@ -48,7 +48,7 @@ const Hero = () => {
               <div className="absolute -left-8 -right-8 top-1/2 h-16 bg-gradient-to-r from-purple-500/10 via-blue-500/20 to-purple-500/10 blur-2xl transform -skew-y-3" />
               <div className="absolute inset-0 bg-black/5 mix-blend-overlay rounded-xl" />
               <img 
-                src="/public/lovable-uploads/45fb9b3b-e6bf-41fd-be81-2fbb51b94e1f.png" 
+                src="/public/lovable-uploads/665b0526-8de3-4037-866d-62410192cb9c.png" 
                 alt="Product Leader"
                 className="rounded-xl shadow-2xl w-full object-contain aspect-[4/3] relative z-10"
               />
@@ -64,4 +64,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
