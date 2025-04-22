@@ -9,7 +9,7 @@ const Frameworks = () => {
   const frameworks = [
     {
       title: "Royalty Platform Framework",
-      icon: <Globe className="h-10 w-10" style={{ color: '#9b87f5' }} />,
+      icon: <Globe className="h-10 w-10" color="#9b87f5" />,
       description: "A comprehensive system for managing music rights, royalty calculations, and payment distributions at scale.",
       features: [
         "Streamlined rights management",
@@ -21,7 +21,7 @@ const Frameworks = () => {
     },
     {
       title: "Product Competency Toolkit",
-      icon: <LayoutGrid className="h-10 w-10" style={{ color: '#9b87f5' }} />,
+      icon: <LayoutGrid className="h-10 w-10" color="#9b87f5" />,
       description: "A structured approach to assess and develop the 12 essential competencies required for successful product leadership.",
       features: [
         "Competency assessment",
@@ -33,7 +33,7 @@ const Frameworks = () => {
     },
     {
       title: "Product Leadership Accelerator",
-      icon: <Component className="h-10 w-10" style={{ color: '#9b87f5' }} />,
+      icon: <Component className="h-10 w-10" color="#9b87f5" />,
       description: "A structured program that combines strategic frameworks, practical tools, and coaching to accelerate product leadership growth.",
       features: [
         "Leadership development",
@@ -96,7 +96,7 @@ const Frameworks = () => {
                   <div className="flex-1 space-y-6">
                     <div className="inline-flex p-3 bg-white/10 rounded-lg mb-4">
                       {React.cloneElement(framework.icon, {
-                        className: "h-10 w-10 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600"
+                        className: "h-10 w-10"
                       })}
                     </div>
                     <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
@@ -129,29 +129,7 @@ const Frameworks = () => {
             </div>
           </div>
         </section>
-        
-        <section className="py-16 md:py-24 bg-black border-y border-white">
-          <div className="container">
-            <div className="max-w-3xl mx-auto text-center mb-12">
-              <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
-                Framework Implementation Process
-              </h2>
-              <p className="text-lg text-white/80">
-                A structured approach to adapt and implement these frameworks in your organization
-              </p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
-              {implementationSteps.map((step, index) => (
-                <div key={index} className="bg-black p-6 rounded-lg border border-white hover:border-blue-400/50 transition-colors duration-300">
-                  <div className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600 mb-4">{step.number}</div>
-                  <h3 className="text-xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">{step.title}</h3>
-                  <p className="text-white/80">{step.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-        
+
         <section className="py-16 md:py-24">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center mb-12">
@@ -165,7 +143,7 @@ const Frameworks = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
               <div className="bg-black p-6 rounded-lg border border-white hover:border-blue-400/50 transition-colors duration-300">
                 <div className="p-3 bg-white/10 rounded-full inline-flex mb-4">
-                  <FileDown className="h-6 w-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600" />
+                  <FileDown className="h-6 w-6" color="#9b87f5" />
                 </div>
                 <h3 className="text-xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">Product Competency Assessment</h3>
                 <p className="text-white/80 mb-4">A self-assessment tool to evaluate your product management skills across 12 dimensions.</p>
@@ -175,7 +153,7 @@ const Frameworks = () => {
               </div>
               <div className="bg-black p-6 rounded-lg border border-white hover:border-blue-400/50 transition-colors duration-300">
                 <div className="p-3 bg-white/10 rounded-full inline-flex mb-4">
-                  <FileDown className="h-6 w-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600" />
+                  <FileDown className="h-6 w-6" color="#9b87f5" />
                 </div>
                 <h3 className="text-xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">Royalty Platform Guide</h3>
                 <p className="text-white/80 mb-4">Comprehensive guide for building and managing efficient royalty distribution systems.</p>
@@ -185,7 +163,7 @@ const Frameworks = () => {
               </div>
               <div className="bg-black p-6 rounded-lg border border-white hover:border-blue-400/50 transition-colors duration-300">
                 <div className="p-3 bg-white/10 rounded-full inline-flex mb-4">
-                  <FileDown className="h-6 w-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600" />
+                  <FileDown className="h-6 w-6" color="#9b87f5" />
                 </div>
                 <h3 className="text-xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">Leadership Accelerator Workbook</h3>
                 <p className="text-white/80 mb-4">Step-by-step workbook for developing product leadership capabilities.</p>
@@ -196,7 +174,7 @@ const Frameworks = () => {
             </div>
           </div>
         </section>
-        
+
         <section className="py-16 md:py-24 bg-black border-t border-white">
           <div className="container">
             <div className="max-w-4xl mx-auto p-8 md:p-12 bg-black border border-white rounded-lg">
@@ -215,7 +193,7 @@ const Frameworks = () => {
                   </Link>
                 </div>
                 <div className="flex-1 flex justify-center">
-                  <Workflow className="h-40 w-40 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600 opacity-20" />
+                  <Workflow className="h-40 w-40" color="#9b87f5" />
                 </div>
               </div>
             </div>
