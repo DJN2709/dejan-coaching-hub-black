@@ -8,7 +8,7 @@ const Frameworks = () => {
   const frameworks = [
     {
       title: "Royalty Platform Framework",
-      icon: <Globe className="h-10 w-10 text-primary" />,
+      icon: <Globe className="h-10 w-10" style={{ color: '#9b87f5' }} />,
       description: "A comprehensive system for managing music rights, royalty calculations, and payment distributions at scale.",
       features: [
         "Streamlined rights management",
@@ -20,7 +20,7 @@ const Frameworks = () => {
     },
     {
       title: "Product Competency Toolkit",
-      icon: <LayoutGrid className="h-10 w-10 text-primary" />,
+      icon: <LayoutGrid className="h-10 w-10" style={{ color: '#9b87f5' }} />,
       description: "A structured approach to assess and develop the 12 essential competencies required for successful product leadership.",
       features: [
         "Competency assessment",
@@ -32,7 +32,7 @@ const Frameworks = () => {
     },
     {
       title: "Product Leadership Accelerator",
-      icon: <Component className="h-10 w-10 text-primary" />,
+      icon: <Component className="h-10 w-10" style={{ color: '#9b87f5' }} />,
       description: "A structured program that combines strategic frameworks, practical tools, and coaching to accelerate product leadership growth.",
       features: [
         "Leadership development",

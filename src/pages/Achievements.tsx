@@ -5,32 +5,32 @@ import Footer from "@/components/Footer";
 const Achievements = () => {
   const achievements = [
     {
-      icon: <Briefcase className="h-8 w-8 text-primary" />,
+      icon: <Briefcase className="h-8 w-8" style={{ color: '#9b87f5' }} />,
       title: "Accelerated Financial Processes",
       description: "Optimized financial operations and reduced operational costs by identifying and eliminating process bottlenecks."
     },
     {
-      icon: <Users className="h-8 w-8 text-primary" />,
+      icon: <Users className="h-8 w-8" style={{ color: '#9b87f5' }} />,
       title: "User-Centric Royalties",
       description: "Launched Fan-Powered Royalties at SoundCloud—the industry's first user-centric payout model. Empowered creators with greater transparency and control over their earnings."
     },
     {
-      icon: <Trophy className="h-8 w-8 text-primary" />,
+      icon: <Trophy className="h-8 w-8" style={{ color: '#9b87f5' }} />,
       title: "Outcome-Driven Culture",
       description: "Introduced product frameworks and monthly prioritization rituals, replacing rigid timelines with adaptive, value-driven planning."
     },
     {
-      icon: <Medal className="h-8 w-8 text-primary" />,
+      icon: <Medal className="h-8 w-8" style={{ color: '#9b87f5' }} />,
       title: "Strategy at Scale",
       description: "Developed and implemented strategies that accelerated experimentation and significantly reduced time to market."
     },
     {
-      icon: <BookOpen className="h-8 w-8 text-primary" />,
+      icon: <BookOpen className="h-8 w-8" style={{ color: '#9b87f5' }} />,
       title: "Data-Led Discovery",
       description: "Built frameworks to measure product impact using both quantitative and qualitative data—enabling better, faster decisions."
     },
     {
-      icon: <Award className="h-8 w-8 text-primary" />,
+      icon: <Award className="h-8 w-8" style={{ color: '#9b87f5' }} />,
       title: "Educator & Speaker",
       description: "As a featured speaker and instructor at Product School, mentored aspiring product managers and equipped them with the tools to lead with clarity, confidence, and purpose."
     }

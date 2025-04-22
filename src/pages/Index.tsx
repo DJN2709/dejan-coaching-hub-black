@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { ArrowRight, Award, Code, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -8,19 +9,19 @@ import Hero from "@/components/Hero";
 const Index = () => {
   const features = [
     {
-      icon: <Award className="h-10 w-10" style={{ color: '#7E69AB' }} />,
+      icon: <Award className="h-10 w-10" style={{ color: '#9b87f5' }} />,
       title: "Achievements",
       description: "Explore my professional journey, accomplishments, and the impact I've made across various organizations.",
       link: "/achievements"
     },
     {
-      icon: <Code className="h-10 w-10" style={{ color: '#7E69AB' }} />,
+      icon: <Code className="h-10 w-10" style={{ color: '#9b87f5' }} />,
       title: "Frameworks",
       description: "Discover the product management frameworks I've developed and implemented to drive success.",
       link: "/frameworks"
     },
     {
-      icon: <Calendar className="h-10 w-10" style={{ color: '#7E69AB' }} />,
+      icon: <Calendar className="h-10 w-10" style={{ color: '#9b87f5' }} />,
       title: "Coaching",
       description: "Book personalized coaching sessions to accelerate your product leadership growth.",
       link: "/booking"
