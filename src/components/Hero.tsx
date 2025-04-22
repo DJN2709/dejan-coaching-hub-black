@@ -40,7 +40,7 @@ const Hero = () => {
               </Link>
             </div>
           </div>
-          <div className="flex-1">
+          <div className="flex-1 max-w-sm">
             <img 
               src="/public/lovable-uploads/22408f1f-e2ab-4a44-80b0-91a52f184c99.png" 
               alt="Product Leader"
