@@ -9,19 +9,19 @@ import Hero from "@/components/Hero";
 const Index = () => {
   const features = [
     {
-      icon: <Award className="h-10 w-10 bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text" />,
+      icon: <Award className="h-10 w-10 text-white" />,
       title: "Achievements",
       description: "Explore my professional journey, accomplishments, and the impact I've made across various organizations.",
       link: "/achievements"
     },
     {
-      icon: <Code className="h-10 w-10 bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text" />,
+      icon: <Code className="h-10 w-10 text-white" />,
       title: "Frameworks",
       description: "Discover the product management frameworks I've developed and implemented to drive success.",
       link: "/frameworks"
     },
     {
-      icon: <Calendar className="h-10 w-10 bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text" />,
+      icon: <Calendar className="h-10 w-10 text-white" />,
       title: "Coaching",
       description: "Book personalized coaching sessions to accelerate your product leadership growth.",
       link: "/booking"
