@@ -1,4 +1,3 @@
-
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Award, Briefcase, BookOpen, Users } from "lucide-react";
@@ -41,19 +40,15 @@ const About = () => {
                 <h1 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
                   About Me
                 </h1>
-                <div className="relative">
-                  <span className="absolute -left-8 top-0 text-4xl text-purple-500">"</span>
-                  <p className="text-xl text-white/80 pl-4">
-                    I've built and launched products across both B2C and B2B—some scaled beautifully, and others failed gloriously. Each experience sharpened my understanding of what it truly takes to create products that solve real problems and drive impact.
-                  </p>
-                  <span className="absolute -bottom-4 right-0 text-4xl text-purple-500">"</span>
-                </div>
+                <p className="text-2xl text-white/80 leading-relaxed">
+                  I've built and launched products across both B2C and B2B—some scaled beautifully, and others failed gloriously. Each experience sharpened my understanding of what it truly takes to create products that solve real problems and drive impact.
+                </p>
               </div>
               <div className="flex-1 flex justify-center">
                 <img 
                   src="/public/lovable-uploads/7de7680b-310e-4003-8132-ca5e1671b114.png"
                   alt="Dejan Krstic"
-                  className="rounded-lg shadow-xl w-full max-w-md object-cover"
+                  className="rounded-lg shadow-xl w-full max-w-xl object-cover aspect-[4/3]"
                 />
               </div>
             </div>
