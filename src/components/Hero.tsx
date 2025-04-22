@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
@@ -47,7 +48,7 @@ const Hero = () => {
               <div className="absolute -left-8 -right-8 top-1/2 h-32 bg-gradient-to-r from-purple-500/10 via-blue-500/20 to-purple-500/10 blur-2xl transform -skew-y-3" />
               <div className="absolute inset-0 bg-black/5 mix-blend-overlay rounded-xl" />
               <img 
-                src="/public/lovable-uploads/22408f1f-e2ab-4a44-80b0-91a52f184c99.png" 
+                src="/public/lovable-uploads/45fb9b3b-e6bf-41fd-be81-2fbb51b94e1f.png" 
                 alt="Product Leader"
                 className="rounded-xl shadow-2xl w-full object-contain aspect-[4/3] relative z-10"
               />
