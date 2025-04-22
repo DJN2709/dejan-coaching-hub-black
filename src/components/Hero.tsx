@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
@@ -18,22 +19,9 @@ const Hero = () => {
       <div className="container px-4 md:px-6 relative z-10">
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
           <div className="flex-1 space-y-4 md:space-y-6">
-            <div className="flex items-center space-x-4 md:space-x-8">
-              <div className="flex-1 max-w-md md:hidden block mr-auto">
-                <div className="relative">
-                  <div className="absolute -inset-1 bg-gradient-to-b from-blue-500/20 via-transparent to-transparent blur-xl opacity-50" />
-                  <img 
-                    src="/lovable-uploads/e16bdd6e-b9ad-4375-8588-a11d1dffce14.png" 
-                    alt="Product Leader"
-                    className="w-full object-contain aspect-[4/3] relative z-10 drop-shadow-2xl rounded-lg"
-                  />
-                  <div className="absolute -bottom-4 -left-4 -right-4 h-8 bg-black/80 blur-xl rounded-full transform rotate-1" />
-                </div>
-              </div>
-              <h1 className="font-display text-3xl md:text-4xl lg:text-6xl font-bold tracking-tight text-white ml-auto md:ml-0">
-                Product Leadership <span className="bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">Coaching</span>
-              </h1>
-            </div>
+            <h1 className="font-display text-3xl md:text-4xl lg:text-6xl font-bold tracking-tight text-white">
+              Product Leadership <span className="bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">Coaching</span>
+            </h1>
             <div className="space-y-4">
               <p className="text-lg md:text-xl text-white/80 max-w-prose">
                 Accelerate your product development with battle-tested frameworks, real-world insights, and personal coaching from someone who's been in the trenches.
@@ -63,13 +51,13 @@ const Hero = () => {
               </Link>
             </div>
           </div>
-          <div className="flex-1 max-w-md hidden md:block -ml-16">
+          <div className="flex-1 max-w-md">
             <div className="relative">
               <div className="absolute -inset-1 bg-gradient-to-b from-blue-500/20 via-transparent to-transparent blur-xl opacity-50" />
               <img 
                 src="/lovable-uploads/e16bdd6e-b9ad-4375-8588-a11d1dffce14.png" 
                 alt="Product Leader"
-                className="w-full object-contain aspect-[4/3] relative z-10 drop-shadow-2xl rounded-lg"
+                className="w-full object-contain aspect-[4/3] relative z-10 drop-shadow-2xl"
               />
               <div className="absolute -bottom-4 -left-4 -right-4 h-8 bg-black/80 blur-xl rounded-full transform rotate-1" />
             </div>
