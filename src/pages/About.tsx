@@ -1,102 +1,98 @@
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Award, Briefcase, BookOpen, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { Users, Heart, Handshake, MessageSquare } from "lucide-react";
 
 const About = () => {
-  const highlights = [
-    {
-      icon: <Briefcase className="h-8 w-8" style={{ color: '#9b87f5' }} />,
-      title: "Product Experience",
-      description: "Over a decade of experience building and scaling products in music tech, from consumer apps to enterprise solutions."
-    },
-    {
-      icon: <Users className="h-8 w-8" style={{ color: '#9b87f5' }} />,
-      title: "Team Leadership",
-      description: "Led cross-functional teams across EMEA, fostering a culture of innovation, trust, and continuous learning."
-    },
-    {
-      icon: <BookOpen className="h-8 w-8" style={{ color: '#9b87f5' }} />,
-      title: "Industry Knowledge",
-      description: "Deep expertise in music streaming, creator economy, and rights management technologies."
-    },
-    {
-      icon: <Award className="h-8 w-8" style={{ color: '#9b87f5' }} />,
-      title: "Thought Leadership",
-      description: "Regular speaker at product conferences and mentor at Product School, sharing insights with the next generation of product leaders."
-    }
-  ];
-
   return (
     <div className="flex min-h-screen flex-col bg-black text-white">
       <Navbar />
       <main className="flex-1">
-        {/* Hero Section */}
-        <section className="py-16 md:py-24 bg-black">
+        <section className="py-16 md:py-24">
           <div className="container px-4 md:px-6">
-            <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start gap-8 md:gap-12">
-              <div className="flex-1">
-                <h1 className="font-display text-5xl md:text-6xl font-bold tracking-tight mb-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
-                  About Me
+            <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
+              <div className="flex-1 space-y-8">
+                <h1 className="font-display text-4xl md:text-5xl font-bold tracking-tight bg-gradient-to-r from-blue-400 to-purple-600 text-transparent bg-clip-text">
+                  Hi, I'm Dejan
                 </h1>
-                <p className="text-2xl text-white/80 leading-relaxed mb-8">
-                  I've built and launched products across both B2C and B2B—some scaled beautifully, and others failed gloriously. Each experience sharpened my understanding of what it truly takes to create products that solve real problems and drive impact.
-                </p>
-              </div>
-              <div className="flex-1 flex justify-center">
-                <img 
-                  src="/public/lovable-uploads/7de7680b-310e-4003-8132-ca5e1671b114.png"
-                  alt="Dejan Krstic"
-                  className="rounded-xl shadow-xl w-full max-w-xl object-cover aspect-[3/2]"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Professional Highlights */}
-        <section className="py-16 md:py-20">
-          <div className="container">
-            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
-              Professional Highlights
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {highlights.map((highlight, index) => (
-                <div
-                  key={index}
-                  className="flex flex-col items-center text-center p-8 rounded-lg bg-black border border-white/10 hover:border-blue-400/50 transition-all duration-300"
-                >
-                  <div className="mb-4 p-4 bg-gradient-to-r from-blue-400/20 to-purple-600/20 rounded-full">
-                    {highlight.icon}
-                  </div>
-                  <h3 className="text-xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
-                    {highlight.title}
-                  </h3>
-                  <p className="text-white/80">{highlight.description}</p>
+                <div className="space-y-6 text-lg text-white/80">
+                  <p>
+                    "I've built and launched products across both B2C and B2B—some scaled beautifully, and others failed gloriously. Each experience sharpened my understanding of what it truly takes to create products that solve real problems and drive impact."
+                  </p>
+                  <p>
+                    My journey in product leadership has taught me that the most impactful products are built not just with technical excellence, but with deep empathy, understanding, and a relentless focus on solving real human problems.
+                  </p>
+                  <p>
+                    I believe in leading with heart, fostering psychological safety, and creating environments where innovation thrives through open collaboration and fearless experimentation.
+                  </p>
                 </div>
-              ))}
+              </div>
+              <div className="lg:flex-1">
+                <div className="relative w-full max-w-[480px] h-[400px] transform transition-all duration-500 hover:scale-[1.02]">
+                  <div className="relative w-full h-full rounded-2xl overflow-hidden border border-white/20 shadow-[0_8px_32px_rgba(255,255,255,0.15)] backdrop-blur-sm">
+                    <img 
+                      src="/lovable-uploads/789276d8-4a05-41b1-8e23-74d8fea12f4f.png"
+                      alt="Dejan Krstic - Product Leadership Coach" 
+                      className="object-cover w-full h-full brightness-90 contrast-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="py-16 md:py-24 bg-black">
-          <div className="container max-w-4xl mx-auto">
-            <div className="text-center">
-              <h2 className="font-display text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight mb-4 text-white">
-                Let's Work Together
-              </h2>
-              <p className="text-sm md:text-lg text-white/80 mb-6 md:mb-8 max-w-[800px] mx-auto">
-                Ready to take your product leadership to the next level? Whether you're looking for coaching, consulting, or just want to connect, I'm here to help.
-              </p>
-              <Link to="/booking">
-                <Button variant="outline" size="lg" className="gap-2 group text-sm md:text-base bg-gradient-to-r from-blue-500 to-purple-500 text-white border-transparent">
-                  Book a Session
-                </Button>
-              </Link>
+        <section className="py-16 bg-gradient-to-b from-black to-gray-900">
+          <div className="container px-4 md:px-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div className="flex flex-col items-center text-center space-y-4">
+                <div className="p-3 bg-white/5 rounded-full">
+                  <Heart className="h-8 w-8" style={{ color: '#9b87f5' }} />
+                </div>
+                <h3 className="text-xl font-bold text-white">Lead with Empathy</h3>
+                <p className="text-white/80">Understanding user needs and team dynamics through genuine connection and care.</p>
+              </div>
+              <div className="flex flex-col items-center text-center space-y-4">
+                <div className="p-3 bg-white/5 rounded-full">
+                  <Handshake className="h-8 w-8" style={{ color: '#9b87f5' }} />
+                </div>
+                <h3 className="text-xl font-bold text-white">Foster Collaboration</h3>
+                <p className="text-white/80">Building bridges between teams and creating environments where everyone can thrive.</p>
+              </div>
+              <div className="flex flex-col items-center text-center space-y-4">
+                <div className="p-3 bg-white/5 rounded-full">
+                  <Users className="h-8 w-8" style={{ color: '#9b87f5' }} />
+                </div>
+                <h3 className="text-xl font-bold text-white">Grow Together</h3>
+                <p className="text-white/80">Mentoring and learning from others while fostering a culture of continuous improvement.</p>
+              </div>
+              <div className="flex flex-col items-center text-center space-y-4">
+                <div className="p-3 bg-white/5 rounded-full">
+                  <MessageSquare className="h-8 w-8" style={{ color: '#9b87f5' }} />
+                </div>
+                <h3 className="text-xl font-bold text-white">Open Dialogue</h3>
+                <p className="text-white/80">Creating space for honest conversations and meaningful feedback.</p>
+              </div>
             </div>
+          </div>
+        </section>
+
+        <section className="py-16">
+          <div className="container px-4 md:px-6 text-center">
+            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-8 bg-gradient-to-r from-blue-400 to-purple-600 text-transparent bg-clip-text">
+              Ready to Transform Your Product Leadership?
+            </h2>
+            <Link to="/booking">
+              <Button 
+                size="lg"
+                className="bg-gradient-to-r from-blue-500 to-purple-500 text-white border-transparent hover:from-blue-600 hover:to-purple-600"
+              >
+                Start Your Journey
+              </Button>
+            </Link>
           </div>
         </section>
       </main>
@@ -106,4 +102,3 @@ const About = () => {
 };
 
 export default About;
-

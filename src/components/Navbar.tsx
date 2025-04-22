@@ -25,6 +25,16 @@ const Navbar = () => {
               Home
             </Link>
             <Link
+              to="/about"
+              className={`text-sm font-medium transition-colors rounded-2xl px-4 py-2 ${
+                location.pathname === "/about" 
+                ? "bg-white text-black" 
+                : "text-white hover:bg-white hover:text-black"
+              }`}
+            >
+              About
+            </Link>
+            <Link
               to="/achievements"
               className={`text-sm font-medium transition-colors rounded-2xl px-4 py-2 ${
                 location.pathname === "/achievements" 
@@ -33,16 +43,6 @@ const Navbar = () => {
               }`}
             >
               Achievements
-            </Link>
-            <Link
-              to="/booking"
-              className={`text-sm font-medium transition-colors rounded-2xl px-4 py-2 ${
-                location.pathname === "/booking" 
-                ? "bg-white text-black" 
-                : "text-white hover:bg-white hover:text-black"
-              }`}
-            >
-              Coaching
             </Link>
             <Link
               to="/frameworks"
@@ -55,14 +55,14 @@ const Navbar = () => {
               Frameworks
             </Link>
             <Link
-              to="/about"
+              to="/booking"
               className={`text-sm font-medium transition-colors rounded-2xl px-4 py-2 ${
-                location.pathname === "/about" 
+                location.pathname === "/booking" 
                 ? "bg-white text-black" 
                 : "text-white hover:bg-white hover:text-black"
               }`}
             >
-              About
+              Coaching
             </Link>
           </nav>
         </div>
@@ -109,37 +109,15 @@ const Navbar = () => {
                 Home
               </Link>
               <Link
-                to="/achievements"
+                to="/about"
                 className={`text-sm font-medium transition-colors rounded-2xl px-4 py-2 ${
-                  location.pathname === "/achievements" 
+                  location.pathname === "/about" 
                   ? "bg-white text-black" 
                   : "text-white hover:bg-white hover:text-black"
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
-                Achievements
-              </Link>
-              <Link
-                to="/booking"
-                className={`text-sm font-medium transition-colors rounded-2xl px-4 py-2 ${
-                  location.pathname === "/booking" 
-                  ? "bg-white text-black" 
-                  : "text-white hover:bg-white hover:text-black"
-                }`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Coaching
-              </Link>
-              <Link
-                to="/frameworks"
-                className={`text-sm font-medium transition-colors rounded-2xl px-4 py-2 ${
-                  location.pathname === "/frameworks" 
-                  ? "bg-white text-black" 
-                  : "text-white hover:bg-white hover:text-black"
-                }`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Frameworks
+                About
               </Link>
               <div className="flex items-center gap-2 mt-2">
                 <a href="https://www.linkedin.com/in/dejan-krstic-b4a7a98a/" target="_blank" rel="noopener noreferrer">
@@ -155,17 +133,6 @@ const Navbar = () => {
               </div>
               <Link to="/booking" className="mt-2">
                 <Button className="w-full bg-white text-black hover:bg-white/90">Book a Session</Button>
-              </Link>
-              <Link
-                to="/about"
-                className={`text-sm font-medium transition-colors rounded-2xl px-4 py-2 ${
-                  location.pathname === "/about" 
-                  ? "bg-white text-black" 
-                  : "text-white hover:bg-white hover:text-black"
-                }`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                About
               </Link>
             </nav>
           </div>
