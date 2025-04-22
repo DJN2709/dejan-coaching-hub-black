@@ -4,8 +4,19 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section className="py-8 md:py-12 lg:py-32 bg-gradient-to-br from-black via-gray-900 to-black">
-      <div className="container px-4 md:px-6">
+    <section className="py-8 md:py-12 lg:py-32 relative overflow-hidden">
+      {/* Conference stage background */}
+      <div 
+        className="absolute inset-0 z-0"
+        style={{
+          backgroundImage: "url('/lovable-uploads/photo-1605810230434-7631ac76ec81.jpg')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          filter: 'brightness(0.4)'
+        }}
+      />
+      
+      <div className="container px-4 md:px-6 relative z-10">
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
           <div className="flex-1 space-y-4 md:space-y-6">
             <h1 className="font-display text-3xl md:text-4xl lg:text-6xl font-bold tracking-tight text-white">
@@ -42,13 +53,11 @@ const Hero = () => {
           </div>
           <div className="flex-1 max-w-md">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-t from-purple-500/20 via-transparent to-transparent rounded-xl" />
               <div className="absolute -inset-1 bg-gradient-to-b from-blue-500/20 via-transparent to-transparent blur-xl opacity-50" />
-              <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black/80 via-black/40 to-transparent rounded-b-xl" />
               <img 
-                src="/public/lovable-uploads/e16bdd6e-b9ad-4375-8588-a11d1dffce14.png" 
+                src="/lovable-uploads/e16bdd6e-b9ad-4375-8588-a11d1dffce14.png" 
                 alt="Product Leader"
-                className="rounded-xl shadow-2xl w-full object-contain aspect-[4/3] relative z-10"
+                className="w-full object-contain aspect-[4/3] relative z-10 drop-shadow-2xl"
               />
               <div className="absolute -bottom-4 -left-4 -right-4 h-8 bg-black/80 blur-xl rounded-full transform rotate-1" />
             </div>
