@@ -46,7 +46,7 @@ const Hero = () => {
               <div className="absolute -inset-1 bg-gradient-to-b from-blue-500/20 via-transparent to-transparent blur-xl opacity-50" />
               <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black/80 via-black/40 to-transparent rounded-b-xl" />
               <img 
-                src="/public/lovable-uploads/22408f1f-e2ab-4a44-80b0-91a52f184c99.png" 
+                src="/public/lovable-uploads/e16bdd6e-b9ad-4375-8588-a11d1dffce14.png" 
                 alt="Product Leader"
                 className="rounded-xl shadow-2xl w-full object-contain aspect-[4/3] relative z-10"
               />
