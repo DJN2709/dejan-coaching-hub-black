@@ -138,9 +138,9 @@ const Achievements = () => {
                   <div className="flex flex-col md:flex-row gap-6">
                     <div className="md:w-1/3">
                       <div className="sticky top-20">
-                        <span className="block text-sm font-medium text-white/80 mb-1">{highlight.year}</span>
-                        <h3 className="text-xl font-bold mb-1 text-white">{highlight.role}</h3>
-                        <p className="text-white/80 font-medium">{highlight.company}</p>
+                        <span className="block text-sm font-medium mb-1" style={{ color: '#9b87f5' }}>{highlight.year}</span>
+                        <h3 className="text-xl font-bold mb-1" style={{ color: '#9b87f5' }}>{highlight.role}</h3>
+                        <p className="font-medium" style={{ color: '#9b87f5' }}>{highlight.company}</p>
                       </div>
                     </div>
                     <div className="md:w-2/3 bg-black border border-white p-6 rounded-lg">
