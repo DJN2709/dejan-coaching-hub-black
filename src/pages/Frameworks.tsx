@@ -1,3 +1,4 @@
+import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Component, LayoutGrid, Globe, Workflow, ArrowRight, Download, FileDown } from "lucide-react";
@@ -74,7 +75,7 @@ const Frameworks = () => {
         <section className="py-16 md:py-24 bg-black">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-white">
+              <h1 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
                 Product Leadership Frameworks
               </h1>
               <p className="text-xl text-white/80">
@@ -94,9 +95,11 @@ const Frameworks = () => {
                 >
                   <div className="flex-1 space-y-6">
                     <div className="inline-flex p-3 bg-white/10 rounded-lg mb-4">
-                      {framework.icon}
+                      {React.cloneElement(framework.icon, {
+                        className: "h-10 w-10 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600"
+                      })}
                     </div>
-                    <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight text-white">
+                    <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
                       {framework.title}
                     </h2>
                     <p className="text-lg text-white/80">
@@ -110,8 +113,8 @@ const Frameworks = () => {
                         </div>
                       ))}
                     </div>
-                    <Button variant="outline" className="gap-2 text-white border-white hover:bg-white hover:text-black">
-                      Learn more <ArrowRight className="h-4 w-4" />
+                    <Button variant="outline" className="gap-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600 border-blue-400/50 hover:bg-blue-400/10">
+                      Learn more <ArrowRight className="h-4 w-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600" />
                     </Button>
                   </div>
                   <div className="flex-1 rounded-lg overflow-hidden border border-white">
@@ -130,7 +133,7 @@ const Frameworks = () => {
         <section className="py-16 md:py-24 bg-black border-y border-white">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center mb-12">
-              <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4 text-white">
+              <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
                 Framework Implementation Process
               </h2>
               <p className="text-lg text-white/80">
@@ -139,9 +142,9 @@ const Frameworks = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
               {implementationSteps.map((step, index) => (
-                <div key={index} className="bg-black p-6 rounded-lg border border-white">
-                  <div className="text-4xl font-bold text-white mb-4">{step.number}</div>
-                  <h3 className="text-xl font-bold mb-2 text-white">{step.title}</h3>
+                <div key={index} className="bg-black p-6 rounded-lg border border-white hover:border-blue-400/50 transition-colors duration-300">
+                  <div className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600 mb-4">{step.number}</div>
+                  <h3 className="text-xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">{step.title}</h3>
                   <p className="text-white/80">{step.description}</p>
                 </div>
               ))}
@@ -152,7 +155,7 @@ const Frameworks = () => {
         <section className="py-16 md:py-24">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center mb-12">
-              <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4 text-white">
+              <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
                 Framework Resources
               </h2>
               <p className="text-lg text-white/80">
@@ -160,34 +163,34 @@ const Frameworks = () => {
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-              <div className="bg-black p-6 rounded-lg border border-white">
+              <div className="bg-black p-6 rounded-lg border border-white hover:border-blue-400/50 transition-colors duration-300">
                 <div className="p-3 bg-white/10 rounded-full inline-flex mb-4">
-                  <FileDown className="h-6 w-6 text-white" />
+                  <FileDown className="h-6 w-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600" />
                 </div>
-                <h3 className="text-xl font-bold mb-2 text-white">Product Competency Assessment</h3>
+                <h3 className="text-xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">Product Competency Assessment</h3>
                 <p className="text-white/80 mb-4">A self-assessment tool to evaluate your product management skills across 12 dimensions.</p>
-                <Button variant="outline" className="w-full gap-2 text-white border-white hover:bg-white hover:text-black">
-                  <Download className="h-4 w-4" /> Download Template
+                <Button variant="outline" className="w-full gap-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600 border-blue-400/50 hover:bg-blue-400/10">
+                  <Download className="h-4 w-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600" /> Download Template
                 </Button>
               </div>
-              <div className="bg-black p-6 rounded-lg border border-white">
+              <div className="bg-black p-6 rounded-lg border border-white hover:border-blue-400/50 transition-colors duration-300">
                 <div className="p-3 bg-white/10 rounded-full inline-flex mb-4">
-                  <FileDown className="h-6 w-6 text-white" />
+                  <FileDown className="h-6 w-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600" />
                 </div>
-                <h3 className="text-xl font-bold mb-2 text-white">Royalty Platform Guide</h3>
+                <h3 className="text-xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">Royalty Platform Guide</h3>
                 <p className="text-white/80 mb-4">Comprehensive guide for building and managing efficient royalty distribution systems.</p>
-                <Button variant="outline" className="w-full gap-2 text-white border-white hover:bg-white hover:text-black">
-                  <Download className="h-4 w-4" /> Download Guide
+                <Button variant="outline" className="w-full gap-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600 border-blue-400/50 hover:bg-blue-400/10">
+                  <Download className="h-4 w-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600" /> Download Guide
                 </Button>
               </div>
-              <div className="bg-black p-6 rounded-lg border border-white">
+              <div className="bg-black p-6 rounded-lg border border-white hover:border-blue-400/50 transition-colors duration-300">
                 <div className="p-3 bg-white/10 rounded-full inline-flex mb-4">
-                  <FileDown className="h-6 w-6 text-white" />
+                  <FileDown className="h-6 w-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600" />
                 </div>
-                <h3 className="text-xl font-bold mb-2 text-white">Leadership Accelerator Workbook</h3>
+                <h3 className="text-xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">Leadership Accelerator Workbook</h3>
                 <p className="text-white/80 mb-4">Step-by-step workbook for developing product leadership capabilities.</p>
-                <Button variant="outline" className="w-full gap-2 text-white border-white hover:bg-white hover:text-black">
-                  <Download className="h-4 w-4" /> Download Workbook
+                <Button variant="outline" className="w-full gap-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600 border-blue-400/50 hover:bg-blue-400/10">
+                  <Download className="h-4 w-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600" /> Download Workbook
                 </Button>
               </div>
             </div>
@@ -199,18 +202,20 @@ const Frameworks = () => {
             <div className="max-w-4xl mx-auto p-8 md:p-12 bg-black border border-white rounded-lg">
               <div className="flex flex-col md:flex-row gap-8 items-center">
                 <div className="flex-1">
-                  <h2 className="font-display text-2xl md:text-3xl font-bold tracking-tight mb-4 text-white">
+                  <h2 className="font-display text-2xl md:text-3xl font-bold tracking-tight mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
                     Need Help Implementing These Frameworks?
                   </h2>
                   <p className="text-white/80 mb-6">
                     Get personalized guidance through coaching sessions tailored to your specific organizational challenges.
                   </p>
                   <Link to="/booking">
-                    <Button className="bg-white text-black hover:bg-white/90" size="lg">Book a Coaching Session</Button>
+                    <Button className="bg-transparent text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600 border border-blue-400/50 hover:bg-blue-400/10" size="lg">
+                      Book a Coaching Session
+                    </Button>
                   </Link>
                 </div>
                 <div className="flex-1 flex justify-center">
-                  <Workflow className="h-40 w-40 text-white opacity-20" />
+                  <Workflow className="h-40 w-40 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600 opacity-20" />
                 </div>
               </div>
             </div>
