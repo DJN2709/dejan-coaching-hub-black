@@ -40,11 +40,11 @@ const Hero = () => {
               </Link>
             </div>
           </div>
-          <div className="flex-1 max-w-sm">
+          <div className="flex-1 max-w-xs">
             <img 
               src="/public/lovable-uploads/22408f1f-e2ab-4a44-80b0-91a52f184c99.png" 
               alt="Product Leader"
-              className="rounded-xl shadow-2xl w-full object-cover aspect-[4/3]"
+              className="rounded-xl shadow-2xl w-full object-contain aspect-[4/3]"
             />
           </div>
         </div>
@@ -54,3 +54,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
