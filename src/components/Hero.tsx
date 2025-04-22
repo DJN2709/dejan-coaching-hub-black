@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
@@ -40,11 +41,17 @@ const Hero = () => {
             </div>
           </div>
           <div className="flex-1 max-w-md">
-            <img 
-              src="/public/lovable-uploads/22408f1f-e2ab-4a44-80b0-91a52f184c99.png" 
-              alt="Product Leader"
-              className="rounded-xl shadow-2xl w-full object-contain aspect-[4/3]"
-            />
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-t from-purple-500/20 via-transparent to-transparent rounded-xl" />
+              <div className="absolute -inset-1 bg-gradient-to-b from-blue-500/20 via-transparent to-transparent blur-xl opacity-50" />
+              <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black/80 via-black/40 to-transparent rounded-b-xl" />
+              <img 
+                src="/public/lovable-uploads/22408f1f-e2ab-4a44-80b0-91a52f184c99.png" 
+                alt="Product Leader"
+                className="rounded-xl shadow-2xl w-full object-contain aspect-[4/3] relative z-10"
+              />
+              <div className="absolute -bottom-4 -left-4 -right-4 h-8 bg-black/80 blur-xl rounded-full transform rotate-1" />
+            </div>
           </div>
         </div>
       </div>
