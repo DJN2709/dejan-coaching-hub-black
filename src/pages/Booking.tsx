@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -14,7 +13,7 @@ import { toast } from "sonner";
 const Booking = () => {
   const coachingServices = [
     {
-      icon: <Users className="h-6 w-6 text-primary" />,
+      icon: <Users className="h-6 w-6" style={{ color: '#9b87f5' }} />,
       title: "1:1 Coaching",
       description: "Personalized coaching sessions focused on your specific challenges and goals.",
       duration: "60 min",
@@ -28,7 +27,7 @@ const Booking = () => {
       bookingUrl: "https://booking.setmore.com/scheduleappointment/9307d7e5-e172-46a0-84e0-6cee4d029640/services/cc0e3f23-6603-4b8c-a323-8972071236ba"
     },
     {
-      icon: <Video className="h-6 w-6 text-primary" />,
+      icon: <Video className="h-6 w-6" style={{ color: '#9b87f5' }} />,
       title: "Team Workshop",
       description: "Interactive workshops for product teams to align on strategy and improve collaboration.",
       duration: "2 hours",
@@ -42,7 +41,7 @@ const Booking = () => {
       bookingUrl: "https://booking.setmore.com/scheduleappointment/9307d7e5-e172-46a0-84e0-6cee4d029640/services/d0c5105d-b68f-4248-932b-70a8684a958b"
     },
     {
-      icon: <Briefcase className="h-6 w-6 text-primary" />,
+      icon: <Briefcase className="h-6 w-6" style={{ color: '#9b87f5' }} />,
       title: "Leadership Advisory",
       description: "Strategic advisory services for product executives and leadership teams.",
       duration: "90 min",
@@ -65,7 +64,7 @@ const Booking = () => {
         <section className="py-8 md:py-12 bg-black">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-white">
+              <h1 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
                 Book a Coaching Session
               </h1>
               <p className="text-xl text-white/80">
@@ -79,7 +78,7 @@ const Booking = () => {
         <section className="py-12 md:py-16">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center mb-12">
-              <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4 text-white">
+              <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
                 Coaching Services
               </h2>
               <p className="text-lg text-white/80">
@@ -90,28 +89,28 @@ const Booking = () => {
               {coachingServices.map((service, index) => (
                 <Card 
                   key={index} 
-                  className="flex flex-col h-full bg-black border-white"
+                  className="flex flex-col h-full bg-black border-white/20 hover:border-purple-500/50 transition-colors duration-300"
                 >
                   <CardHeader>
                     <div className="flex justify-between items-start">
-                      <div className="p-2 bg-white/10 rounded-lg">
+                      <div className="p-2 bg-white/5 rounded-lg">
                         {service.icon}
                       </div>
                       <div className="flex flex-col items-end">
                         <p className="text-sm text-white/80 flex items-center gap-1">
-                          <Clock className="h-3 w-3" /> {service.duration}
+                          <Clock className="h-3 w-3" style={{ color: '#9b87f5' }} /> {service.duration}
                         </p>
-                        <p className="text-xl font-bold text-white">{service.price}</p>
+                        <p className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">{service.price}</p>
                       </div>
                     </div>
-                    <CardTitle className="mt-4 text-white">{service.title}</CardTitle>
+                    <CardTitle className="mt-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">{service.title}</CardTitle>
                     <CardDescription className="text-white/80">{service.description}</CardDescription>
                   </CardHeader>
                   <CardContent className="flex-grow">
                     <ul className="space-y-2">
                       {service.features.map((feature, i) => (
                         <li key={i} className="flex items-start gap-2">
-                          <CheckCircle2 className="h-5 w-5 text-white shrink-0 mt-0.5" />
+                          <CheckCircle2 className="h-5 w-5 shrink-0 mt-0.5" style={{ color: '#9b87f5' }} />
                           <span className="text-white/80">{feature}</span>
                         </li>
                       ))}
@@ -119,7 +118,7 @@ const Booking = () => {
                   </CardContent>
                   <CardFooter>
                     <Button 
-                      className="w-full bg-white text-black hover:bg-white/90" 
+                      className="w-full bg-gradient-to-r from-blue-400 to-purple-600 text-white hover:from-blue-500 hover:to-purple-700 transition-all duration-300 transform hover:scale-[1.02]" 
                       onClick={() => window.open(service.bookingUrl, '_blank')}
                     >
                       Book Now
@@ -137,4 +136,3 @@ const Booking = () => {
 };
 
 export default Booking;
-
