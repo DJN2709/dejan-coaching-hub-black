@@ -42,8 +42,8 @@ const Hero = () => {
           </div>
           <div className="flex-1">
             <img 
-              src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" 
-              alt="Speaking at conference"
+              src="/public/lovable-uploads/22408f1f-e2ab-4a44-80b0-91a52f184c99.png" 
+              alt="Product Leader"
               className="rounded-xl shadow-2xl w-full object-cover aspect-[4/3]"
             />
           </div>
