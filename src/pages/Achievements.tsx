@@ -1,3 +1,4 @@
+
 import { Trophy, Award, Medal, BookOpen, Briefcase, Users } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -93,7 +94,7 @@ const Achievements = () => {
         <section className="py-16 md:py-24 bg-black">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-white">
+              <h1 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-purple-600">
                 Achievements & Experience
               </h1>
               <p className="text-xl text-white/80">
@@ -106,19 +107,23 @@ const Achievements = () => {
         {/* Key Achievements */}
         <section className="py-16 md:py-20">
           <div className="container">
-            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-12 text-center text-white">
+            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-purple-600">
               Key Achievements
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {achievements.map((achievement, index) => (
                 <div
                   key={index}
-                  className="flex flex-col items-center text-center p-8 rounded-lg bg-black border border-white"
+                  className="flex flex-col items-center text-center p-8 rounded-lg bg-black border border-white/10 hover:border-sky-400/50 transition-all duration-300"
                 >
-                  <div className="mb-4 p-4 bg-white/10 rounded-full">
-                    {achievement.icon}
+                  <div className="mb-4 p-4 bg-gradient-to-r from-sky-400/20 to-purple-600/20 rounded-full">
+                    {React.cloneElement(achievement.icon, {
+                      className: "h-8 w-8 text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-purple-600"
+                    })}
                   </div>
-                  <h3 className="text-xl font-bold mb-2 text-white">{achievement.title}</h3>
+                  <h3 className="text-xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-purple-600">
+                    {achievement.title}
+                  </h3>
                   <p className="text-white/80">{achievement.description}</p>
                 </div>
               ))}
@@ -129,7 +134,7 @@ const Achievements = () => {
         {/* Career Timeline */}
         <section className="py-16 md:py-24 bg-black">
           <div className="container">
-            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-12 text-center text-white">
+            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-purple-600">
               Career Journey
             </h2>
             <div className="max-w-4xl mx-auto">
@@ -138,15 +143,22 @@ const Achievements = () => {
                   <div className="flex flex-col md:flex-row gap-6">
                     <div className="md:w-1/3">
                       <div className="sticky top-20">
-                        <span className="block text-sm font-medium mb-1" style={{ color: '#9b87f5' }}>{highlight.year}</span>
-                        <h3 className="text-xl font-bold mb-1" style={{ color: '#9b87f5' }}>{highlight.role}</h3>
-                        <p className="font-medium" style={{ color: '#9b87f5' }}>{highlight.company}</p>
+                        <span className="block text-sm font-medium mb-1 text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-purple-600">
+                          {highlight.year}
+                        </span>
+                        <h3 className="text-xl font-bold mb-1 text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-purple-600">
+                          {highlight.role}
+                        </h3>
+                        <p className="font-medium text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-purple-600">
+                          {highlight.company}
+                        </p>
                       </div>
                     </div>
-                    <div className="md:w-2/3 bg-black border border-white p-6 rounded-lg">
+                    <div className="md:w-2/3 bg-black border border-white/10 p-6 rounded-lg hover:border-sky-400/50 transition-all duration-300">
                       <p className="mb-4 text-white/80">{highlight.description}</p>
-                      <h4 className="font-medium mb-2 flex items-center gap-2 text-white">
-                        <Award className="h-4 w-4 text-white" /> Key Achievements
+                      <h4 className="font-medium mb-2 flex items-center gap-2 text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-purple-600">
+                        <Award className="h-4 w-4 text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-purple-600" /> 
+                        Key Achievements
                       </h4>
                       <ul className="list-disc pl-5 space-y-1">
                         {highlight.achievements.map((achievement, i) => (
