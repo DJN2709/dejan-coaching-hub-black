@@ -54,6 +54,16 @@ const Navbar = () => {
             >
               Coaching
             </Link>
+            <Link
+              to="/about"
+              className={`text-sm font-medium transition-colors rounded-2xl px-4 py-2 ${
+                location.pathname === "/about" 
+                ? "bg-white text-black" 
+                : "text-white hover:bg-white hover:text-black"
+              }`}
+            >
+              About
+            </Link>
           </nav>
         </div>
 
@@ -123,6 +133,17 @@ const Navbar = () => {
               </div>
               <Link to="/booking" className="mt-2">
                 <Button className="w-full bg-white text-black hover:bg-white/90">Book a Session</Button>
+              </Link>
+              <Link
+                to="/about"
+                className={`text-sm font-medium transition-colors rounded-2xl px-4 py-2 ${
+                  location.pathname === "/about" 
+                  ? "bg-white text-black" 
+                  : "text-white hover:bg-white hover:text-black"
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                About
               </Link>
             </nav>
           </div>

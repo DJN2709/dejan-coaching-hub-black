@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import Achievements from "./pages/Achievements";
 import Frameworks from "./pages/Frameworks";
 import Booking from "./pages/Booking";
+import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="/achievements" element={<Achievements />} />
           <Route path="/frameworks" element={<Frameworks />} />
           <Route path="/booking" element={<Booking />} />
+          <Route path="/about" element={<About />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
