@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
@@ -19,8 +18,8 @@ const Hero = () => {
       <div className="container px-4 md:px-6 relative z-10">
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
           <div className="flex-1 space-y-4 md:space-y-6">
-            <div className="flex items-center space-x-4">
-              <div className="flex-1 max-w-md md:hidden block">
+            <div className="flex items-center space-x-4 md:space-x-8">
+              <div className="flex-1 max-w-md md:hidden block mr-auto">
                 <div className="relative">
                   <div className="absolute -inset-1 bg-gradient-to-b from-blue-500/20 via-transparent to-transparent blur-xl opacity-50" />
                   <img 
@@ -31,7 +30,7 @@ const Hero = () => {
                   <div className="absolute -bottom-4 -left-4 -right-4 h-8 bg-black/80 blur-xl rounded-full transform rotate-1" />
                 </div>
               </div>
-              <h1 className="font-display text-3xl md:text-4xl lg:text-6xl font-bold tracking-tight text-white">
+              <h1 className="font-display text-3xl md:text-4xl lg:text-6xl font-bold tracking-tight text-white ml-auto md:ml-0">
                 Product Leadership <span className="bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">Coaching</span>
               </h1>
             </div>
@@ -64,7 +63,7 @@ const Hero = () => {
               </Link>
             </div>
           </div>
-          <div className="flex-1 max-w-md hidden md:block">
+          <div className="flex-1 max-w-md hidden md:block -ml-16">
             <div className="relative">
               <div className="absolute -inset-1 bg-gradient-to-b from-blue-500/20 via-transparent to-transparent blur-xl opacity-50" />
               <img 
