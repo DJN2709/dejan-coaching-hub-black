@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
@@ -40,7 +39,7 @@ const Hero = () => {
               </Link>
             </div>
           </div>
-          <div className="flex-1 max-w-xs">
+          <div className="flex-1 max-w-md">
             <img 
               src="/public/lovable-uploads/22408f1f-e2ab-4a44-80b0-91a52f184c99.png" 
               alt="Product Leader"
@@ -54,4 +53,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
