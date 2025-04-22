@@ -35,16 +35,6 @@ const Navbar = () => {
               Achievements
             </Link>
             <Link
-              to="/booking"
-              className={`text-sm font-medium transition-colors rounded-2xl px-4 py-2 ${
-                location.pathname === "/booking" 
-                ? "bg-white text-black" 
-                : "text-white hover:bg-white hover:text-black"
-              }`}
-            >
-              Coaching
-            </Link>
-            <Link
               to="/frameworks"
               className={`text-sm font-medium transition-colors rounded-2xl px-4 py-2 ${
                 location.pathname === "/frameworks" 
@@ -53,6 +43,16 @@ const Navbar = () => {
               }`}
             >
               Frameworks
+            </Link>
+            <Link
+              to="/booking"
+              className={`text-sm font-medium transition-colors rounded-2xl px-4 py-2 ${
+                location.pathname === "/booking" 
+                ? "bg-white text-black" 
+                : "text-white hover:bg-white hover:text-black"
+              }`}
+            >
+              Coaching
             </Link>
             <Link
               to="/about"
@@ -118,28 +118,6 @@ const Navbar = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Achievements
-              </Link>
-              <Link
-                to="/booking"
-                className={`text-sm font-medium transition-colors rounded-2xl px-4 py-2 ${
-                  location.pathname === "/booking" 
-                  ? "bg-white text-black" 
-                  : "text-white hover:bg-white hover:text-black"
-                }`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Coaching
-              </Link>
-              <Link
-                to="/frameworks"
-                className={`text-sm font-medium transition-colors rounded-2xl px-4 py-2 ${
-                  location.pathname === "/frameworks" 
-                  ? "bg-white text-black" 
-                  : "text-white hover:bg-white hover:text-black"
-                }`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Frameworks
               </Link>
               <div className="flex items-center gap-2 mt-2">
                 <a href="https://www.linkedin.com/in/dejan-krstic-b4a7a98a/" target="_blank" rel="noopener noreferrer">
