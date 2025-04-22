@@ -36,13 +36,26 @@ const About = () => {
         {/* Hero Section */}
         <section className="py-16 md:py-24 bg-black">
           <div className="container">
-            <div className="max-w-3xl mx-auto text-center">
-              <h1 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
-                About Me
-              </h1>
-              <p className="text-xl text-white/80">
-                I've built and launched products across both B2C and B2B—some scaled beautifully, and others failed gloriously. Each experience sharpened my understanding of what it truly takes to create products that solve real problems and drive impact.
-              </p>
+            <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12">
+              <div className="flex-1">
+                <h1 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
+                  About Me
+                </h1>
+                <div className="relative">
+                  <span className="absolute -left-8 top-0 text-4xl text-purple-500">"</span>
+                  <p className="text-xl text-white/80 pl-4">
+                    I've built and launched products across both B2C and B2B—some scaled beautifully, and others failed gloriously. Each experience sharpened my understanding of what it truly takes to create products that solve real problems and drive impact.
+                  </p>
+                  <span className="absolute -bottom-4 right-0 text-4xl text-purple-500">"</span>
+                </div>
+              </div>
+              <div className="flex-1 flex justify-center">
+                <img 
+                  src="/public/lovable-uploads/7de7680b-310e-4003-8132-ca5e1671b114.png"
+                  alt="Dejan Krstic"
+                  className="rounded-lg shadow-xl w-full max-w-md object-cover"
+                />
+              </div>
             </div>
           </div>
         </section>
