@@ -25,16 +25,6 @@ const Navbar = () => {
               Home
             </Link>
             <Link
-              to="/about"
-              className={`text-sm font-medium transition-colors rounded-2xl px-4 py-2 ${
-                location.pathname === "/about" 
-                ? "bg-white text-black" 
-                : "text-white hover:bg-white hover:text-black"
-              }`}
-            >
-              About
-            </Link>
-            <Link
               to="/achievements"
               className={`text-sm font-medium transition-colors rounded-2xl px-4 py-2 ${
                 location.pathname === "/achievements" 
@@ -109,15 +99,15 @@ const Navbar = () => {
                 Home
               </Link>
               <Link
-                to="/about"
+                to="/achievements"
                 className={`text-sm font-medium transition-colors rounded-2xl px-4 py-2 ${
-                  location.pathname === "/about" 
+                  location.pathname === "/achievements" 
                   ? "bg-white text-black" 
                   : "text-white hover:bg-white hover:text-black"
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
-                About
+                Achievements
               </Link>
               <div className="flex items-center gap-2 mt-2">
                 <a href="https://www.linkedin.com/in/dejan-krstic-b4a7a98a/" target="_blank" rel="noopener noreferrer">
