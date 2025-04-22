@@ -6,8 +6,8 @@ const Hero = () => {
   return (
     <section className="py-8 md:py-12 lg:py-32 bg-gradient-to-br from-black via-gray-900 to-black">
       <div className="container px-4 md:px-6">
-        <div className="flex flex-col items-center gap-8 md:gap-16">
-          <div className="flex-1 space-y-4 md:space-y-6 text-center animate-fade-in">
+        <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
+          <div className="flex-1 space-y-4 md:space-y-6">
             <h1 className="font-display text-3xl md:text-4xl lg:text-6xl font-bold tracking-tight text-white">
               Product Leadership <span className="bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">Coaching</span>
             </h1>
@@ -19,7 +19,7 @@ const Hero = () => {
                 Let's turn your product vision into reality—together.
               </p>
             </div>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/booking">
                 <Button 
                   variant="outline"
@@ -39,6 +39,13 @@ const Hero = () => {
                 </Button>
               </Link>
             </div>
+          </div>
+          <div className="flex-1">
+            <img 
+              src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" 
+              alt="Speaking at conference"
+              className="rounded-xl shadow-2xl w-full object-cover aspect-[4/3]"
+            />
           </div>
         </div>
       </div>
