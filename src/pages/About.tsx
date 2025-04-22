@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Users, Heart, Handshake, MessageSquare } from "lucide-react";
+import { Users, Heart, HandShake, MessageSquare } from "lucide-react";
 
 const About = () => {
   return (
@@ -57,7 +57,7 @@ const About = () => {
               </div>
               <div className="flex flex-col items-center text-center space-y-4">
                 <div className="p-3 bg-white/5 rounded-full">
-                  <Handshake className="h-8 w-8" style={{ color: '#9b87f5' }} />
+                  <HandShake className="h-8 w-8" style={{ color: '#9b87f5' }} />
                 </div>
                 <h3 className="text-xl font-bold text-white">Foster Collaboration</h3>
                 <p className="text-white/80">Building bridges between teams and creating environments where everyone can thrive.</p>
@@ -77,6 +77,22 @@ const About = () => {
                 <p className="text-white/80">Creating space for honest conversations and meaningful feedback.</p>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section className="py-16">
+          <div className="container px-4 md:px-6 text-center">
+            <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-8 bg-gradient-to-r from-blue-400 to-purple-600 text-transparent bg-clip-text">
+              Ready to Transform Your Product Leadership?
+            </h2>
+            <Link to="/booking">
+              <Button 
+                size="lg"
+                className="bg-gradient-to-r from-blue-500 to-purple-500 text-white border-transparent hover:from-blue-600 hover:to-purple-600"
+              >
+                Start Your Journey
+              </Button>
+            </Link>
           </div>
         </section>
       </main>
