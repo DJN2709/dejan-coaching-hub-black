@@ -1,4 +1,3 @@
-
 import { Link, useLocation } from "react-router-dom";
 import { Linkedin, Twitter, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -24,6 +23,16 @@ const Navbar = () => {
               }`}
             >
               Home
+            </Link>
+            <Link
+              to="/about"
+              className={`text-sm font-medium transition-colors rounded-2xl px-4 py-2 ${
+                location.pathname === "/about" 
+                ? "bg-white text-black" 
+                : "text-white hover:bg-white hover:text-black"
+              }`}
+            >
+              About
             </Link>
             <Link
               to="/achievements"
@@ -58,7 +67,6 @@ const Navbar = () => {
           </nav>
         </div>
 
-        {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-4">
           <div className="flex items-center gap-2">
             <a href="https://www.linkedin.com/in/dejan-krstic-b4a7a98a/" target="_blank" rel="noopener noreferrer">
@@ -77,7 +85,6 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* Mobile Menu Button */}
         <Button
           variant="ghost"
           size="icon"
@@ -87,7 +94,6 @@ const Navbar = () => {
           {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </Button>
 
-        {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="absolute top-16 left-0 right-0 bg-black border-b border-white/10 p-4 md:hidden">
             <nav className="flex flex-col gap-2">
@@ -103,37 +109,15 @@ const Navbar = () => {
                 Home
               </Link>
               <Link
-                to="/achievements"
+                to="/about"
                 className={`text-sm font-medium transition-colors rounded-2xl px-4 py-2 ${
-                  location.pathname === "/achievements" 
+                  location.pathname === "/about" 
                   ? "bg-white text-black" 
                   : "text-white hover:bg-white hover:text-black"
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
-                Achievements
-              </Link>
-              <Link
-                to="/frameworks"
-                className={`text-sm font-medium transition-colors rounded-2xl px-4 py-2 ${
-                  location.pathname === "/frameworks" 
-                  ? "bg-white text-black" 
-                  : "text-white hover:bg-white hover:text-black"
-                }`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Frameworks
-              </Link>
-              <Link
-                to="/booking"
-                className={`text-sm font-medium transition-colors rounded-2xl px-4 py-2 ${
-                  location.pathname === "/booking" 
-                  ? "bg-white text-black" 
-                  : "text-white hover:bg-white hover:text-black"
-                }`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Coaching
+                About
               </Link>
               <div className="flex items-center gap-2 mt-2">
                 <a href="https://www.linkedin.com/in/dejan-krstic-b4a7a98a/" target="_blank" rel="noopener noreferrer">
