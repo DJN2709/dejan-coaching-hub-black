@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
@@ -51,15 +50,25 @@ const Hero = () => {
               </Link>
             </div>
           </div>
-          <div className="flex-1 max-w-md ml-auto md:-ml-16 lg:-ml-24">
+          <div className="flex-1 max-w-md">
             <div className="relative">
               <div className="absolute -inset-1 bg-gradient-to-b from-blue-500/20 via-transparent to-transparent blur-xl opacity-50" />
               <img 
-                src="/lovable-uploads/3f98d7e7-a4ac-489d-bb39-174c8de1316a.png" 
-                alt="Product Leader"
-                className="w-full object-contain aspect-[4/3] relative z-10 drop-shadow-2xl"
+                src="/lovable-uploads/01819dc8-a738-4e82-b8b8-28b1d5fa8c6f.png" 
+                alt="Product Leader Speaking"
+                className="w-full h-auto object-contain relative z-10 drop-shadow-2xl"
+                style={{
+                  filter: 'drop-shadow(0 0 20px rgba(0,0,0,0.3))',
+                  transformStyle: 'preserve-3d',
+                  transform: 'perspective(1000px) translateZ(0)',
+                }}
               />
-              <div className="absolute -bottom-4 -left-4 -right-4 h-8 bg-black/80 blur-xl rounded-full transform rotate-1" />
+              <div 
+                className="absolute -bottom-4 -left-4 -right-4 h-8 bg-white/10 blur-xl rounded-full transform rotate-1"
+                style={{
+                  background: 'linear-gradient(180deg, rgba(255,255,255,0.1) 0%, transparent 100%)'
+                }}
+              />
             </div>
           </div>
         </div>
