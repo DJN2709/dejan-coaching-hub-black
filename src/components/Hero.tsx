@@ -55,7 +55,7 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute -inset-1 bg-gradient-to-b from-blue-500/20 via-transparent to-transparent blur-xl opacity-50" />
               <img 
-                src="/lovable-uploads/e16bdd6e-b9ad-4375-8588-a11d1dffce14.png" 
+                src="/lovable-uploads/3f98d7e7-a4ac-489d-bb39-174c8de1316a.png" 
                 alt="Product Leader"
                 className="w-full object-contain aspect-[4/3] relative z-10 drop-shadow-2xl"
               />
