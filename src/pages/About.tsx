@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Users, Heart, HandShake, MessageSquare } from "lucide-react";
+import { Users, Heart, Handshake, MessageSquare } from "lucide-react";
 
 const About = () => {
   return (
@@ -33,7 +33,7 @@ const About = () => {
                 <div className="relative w-full max-w-[480px] h-[400px] transform transition-all duration-500 hover:scale-[1.02]">
                   <div className="relative w-full h-full rounded-2xl overflow-hidden border border-white/20 shadow-[0_8px_32px_rgba(255,255,255,0.15)] backdrop-blur-sm">
                     <img 
-                      src="/lovable-uploads/776095df-6ce7-4ebb-8318-ade789fad45e.png" 
+                      src="/lovable-uploads/789276d8-4a05-41b1-8e23-74d8fea12f4f.png"
                       alt="Dejan Krstic - Product Leadership Coach" 
                       className="object-cover w-full h-full brightness-90 contrast-105"
                     />
@@ -57,7 +57,7 @@ const About = () => {
               </div>
               <div className="flex flex-col items-center text-center space-y-4">
                 <div className="p-3 bg-white/5 rounded-full">
-                  <HandShake className="h-8 w-8" style={{ color: '#9b87f5' }} />
+                  <Handshake className="h-8 w-8" style={{ color: '#9b87f5' }} />
                 </div>
                 <h3 className="text-xl font-bold text-white">Foster Collaboration</h3>
                 <p className="text-white/80">Building bridges between teams and creating environments where everyone can thrive.</p>
