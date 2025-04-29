@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { ArrowRight, Award, Code, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -37,23 +36,27 @@ const Index = () => {
         {/* Features Section */}
         <section className="py-8 md:py-16 lg:py-24 bg-black px-4 md:px-0">
           <div className="container max-w-7xl mx-auto">
-            <div className="text-center mb-8 md:mb-12">
-              <h2 className="font-display text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight mb-4 text-white">
+            <div className="mb-8 md:mb-12 text-left">
+              <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text text-center">
                 How I Can Help You
               </h2>
-              <div className="max-w-[800px] mx-auto">
-                <p className="text-base md:text-lg text-white/80 mb-4 md:mb-6">
+              <div className="max-w-[1200px]">
+                <p className="text-xl md:text-2xl text-white/90 mb-6">
                   I help product teams move faster, think clearer, and build smarter—by combining deep domain expertise with battle-tested product frameworks and a people-first approach. With over 12 years of product leadership experience in the music-tech space, I've worked across B2C and B2B, helping launch, scale, and sometimes gloriously fail products. Every step brought its own lesson, and I use that knowledge today to empower others to do better work.
                 </p>
-                <h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-white">What I Do</h3>
-                <p className="text-sm md:text-md text-white/80 mb-4 md:mb-6">
+                <h3 className="text-2xl md:text-3xl font-semibold mb-4 bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text text-center">
+                  What I Do
+                </h3>
+                <p className="text-lg md:text-xl text-white/90 mb-6">
                   I focus on building high-performing product teams with a culture of ownership, trust, and experimentation. My approach involves coaching teams to make outcome-driven decisions using OKRs, value stream mapping, and discovery best practices. I specialize in designing product strategies that align user needs with business goals, and I craft operationally efficient solutions for highly complex financial and rights-based ecosystems.
                 </p>
-                <h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-white">How I Lead</h3>
-                <p className="text-sm md:text-md text-white/80 mb-6 md:mb-8">
+                <h3 className="text-2xl md:text-3xl font-semibold mb-4 bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text text-center">
+                  How I Lead
+                </h3>
+                <p className="text-lg md:text-xl text-white/90 mb-6">
                   Leadership is a team sport. I aim to cultivate psychological safety, curiosity, and joy within every team I work with. I've helped establish forums for collaborative planning, celebrated failure to normalize learning, and actively mentored team members in product craft.
                 </p>
-                <p className="text-sm md:text-md text-white/80 mb-6 md:mb-8">
+                <p className="text-lg md:text-xl text-white/90 mb-6">
                   I also speak at product events and mentor aspiring PMs through programs like Product School and Growth School.
                 </p>
               </div>
@@ -82,12 +85,12 @@ const Index = () => {
         
         {/* CTA Section */}
         <section className="py-8 md:py-16 lg:py-24 bg-black px-4 md:px-0">
-          <div className="container max-w-4xl mx-auto">
+          <div className="container max-w-7xl mx-auto">
             <div className="text-center">
               <h2 className="font-display text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight mb-4 text-white">
                 Ready to Elevate Your Product Leadership?
               </h2>
-              <p className="text-sm md:text-lg text-white/80 mb-6 md:mb-8 max-w-[800px] mx-auto">
+              <p className="text-sm md:text-lg text-white/80 mb-6 md:mb-8 max-w-[1200px] mx-auto">
                 Book a coaching session with me to discuss your specific challenges and goals. Let's work together to take your product leadership skills to the next level.
               </p>
               <Link to="/booking">

@@ -1,4 +1,3 @@
-
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -31,13 +30,13 @@ const About = () => {
               </div>
               <div className="lg:flex-1">
                 <div className="relative w-full max-w-[480px] h-[400px] transform transition-all duration-500 hover:scale-[1.02]">
-                  <div className="relative w-full h-full rounded-2xl overflow-hidden border border-white/20 shadow-[0_8px_32px_rgba(255,255,255,0.15)] backdrop-blur-sm">
+                  <div className="w-full h-full p-[2px] rounded-2xl bg-gradient-to-r from-blue-400 to-purple-600">
                     <img 
-                      src="/lovable-uploads/789276d8-4a05-41b1-8e23-74d8fea12f4f.png"
+                      src="/lovable-uploads/dejan-profile-brick.jpg"
                       alt="Dejan Krstic - Product Leadership Coach" 
-                      className="object-cover w-full h-full brightness-90 contrast-105"
+                      className="object-cover w-full h-full rounded-2xl bg-black"
+                      style={{ display: 'block' }}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
                   </div>
                 </div>
               </div>

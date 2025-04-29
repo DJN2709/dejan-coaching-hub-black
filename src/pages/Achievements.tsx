@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Trophy, Award, Medal, BookOpen, Briefcase, Users } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -111,6 +110,7 @@ const Achievements = () => {
             <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
               Key Achievements
             </h2>
+            <div className="container max-w-7xl mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {achievements.map((achievement, index) => (
                 <div
@@ -128,6 +128,7 @@ const Achievements = () => {
                   <p className="text-white/80">{achievement.description}</p>
                 </div>
               ))}
+              </div>
             </div>
           </div>
         </section>
@@ -138,7 +139,7 @@ const Achievements = () => {
             <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
               Career Journey
             </h2>
-            <div className="max-w-4xl mx-auto">
+            <div className="container max-w-7xl mx-auto px-4">
               {careerHighlights.map((highlight, index) => (
                 <div key={index} className="mb-12 relative">
                   <div className="flex flex-col md:flex-row gap-6">
