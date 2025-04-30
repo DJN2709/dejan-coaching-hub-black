@@ -61,9 +61,9 @@ const Booking = () => {
       <Navbar />
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="py-8 md:py-12 bg-black">
+        <section className="pt-24 md:pt-32 pb-8 md:pb-12 bg-gradient-to-br from-black via-gray-900 to-black">
           <div className="container">
-            <div className="max-w-3xl mx-auto text-center">
+            <div className="max-w-3xl mx-auto text-center animate-fade-in">
               <h1 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
                 Book a Coaching Session
               </h1>

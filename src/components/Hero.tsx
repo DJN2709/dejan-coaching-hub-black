@@ -8,9 +8,9 @@ const Hero = () => {
         <div className="flex flex-col items-center">
           <div className="flex-1 space-y-4 md:space-y-6 text-center animate-fade-in">
             <div className="flex flex-col items-center gap-4">
-            <h1 className="font-display text-3xl md:text-4xl lg:text-6xl font-bold tracking-tight text-white">
-              Product Leadership <span className="bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">Coaching</span>
-            </h1>
+              <h1 className="font-display text-3xl md:text-4xl lg:text-6xl font-bold tracking-tight text-white">
+                Product Leadership <span className="bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">Coaching</span>
+              </h1>
             </div>
             <div className="space-y-4">
               <p className="text-lg md:text-xl text-white/80 max-w-prose">

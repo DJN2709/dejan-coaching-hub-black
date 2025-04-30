@@ -9,9 +9,9 @@ const About = () => {
     <div className="flex min-h-screen flex-col bg-black text-white">
       <Navbar />
       <main className="flex-1">
-        <section className="py-16 md:py-24">
+        <section className="py-16 md:py-24 bg-gradient-to-br from-black via-gray-900 to-black">
           <div className="container px-4 md:px-6">
-            <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
+            <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-24 animate-fade-in">
               <div className="flex-1 space-y-8">
                 <h1 className="font-display text-4xl md:text-5xl font-bold tracking-tight bg-gradient-to-r from-blue-400 to-purple-600 text-transparent bg-clip-text">
                   Hi, I'm Dejan

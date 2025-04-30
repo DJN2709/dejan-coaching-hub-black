@@ -91,10 +91,10 @@ const Achievements = () => {
       <Navbar />
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="py-16 md:py-24 bg-black">
+        <section className="pt-24 md:pt-32 pb-8 md:pb-12 bg-gradient-to-br from-black via-gray-900 to-black">
           <div className="container">
-            <div className="max-w-3xl mx-auto text-center">
-              <h1 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
+            <div className="max-w-3xl mx-auto text-center animate-fade-in">
+              <h1 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500">
                 Achievements & Experience
               </h1>
               <p className="text-xl text-white/80">
@@ -115,7 +115,7 @@ const Achievements = () => {
               {achievements.map((achievement, index) => (
                 <div
                   key={index}
-                  className="flex flex-col items-center text-center p-8 rounded-lg bg-black border border-white/10 hover:border-blue-400/50 transition-all duration-300"
+                  className="flex flex-col items-center text-center p-8 rounded-lg bg-black border border-white hover:border-blue-400/50 transition-all duration-300"
                 >
                   <div className="mb-4 p-4 bg-gradient-to-r from-blue-400/20 to-purple-600/20 rounded-full">
                     {React.cloneElement(achievement.icon, {
@@ -156,7 +156,7 @@ const Achievements = () => {
                         </p>
                       </div>
                     </div>
-                    <div className="md:w-2/3 bg-black border border-white/10 p-6 rounded-lg hover:border-blue-400/50 transition-all duration-300">
+                    <div className="md:w-2/3 bg-black border border-white p-6 rounded-lg hover:border-blue-400/50 transition-all duration-300">
                       <p className="mb-4 text-white/80">{highlight.description}</p>
                       <h4 className="font-medium mb-2 flex items-center gap-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
                         <Award className="h-4 w-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600" /> 
