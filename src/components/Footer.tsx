@@ -31,7 +31,7 @@ const Footer = () => {
               href="mailto:dejan.krstic@web.de" 
               className="group"
             >
-              <Button variant="outline" size="sm" className="gap-2 group text-xs md:text-sm bg-gradient-to-r from-blue-500 to-purple-500 text-white border-transparent">
+              <Button variant="outline" size="sm" className="gap-2 group text-xs md:text-sm bg-gradient-to-r from-blue-500 to-purple-500 text-white border-transparent rounded-full">
                 Get in Touch <Mail className="h-3 w-3 group-hover:scale-110 transition-transform" />
               </Button>
             </a>
