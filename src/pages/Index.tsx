@@ -48,7 +48,7 @@ const Index = () => {
                   What I Do
                 </h3>
                 <p className="text-base md:text-lg text-white/90 mb-4 text-center">
-                  I focus on building high-performing product teams with a culture of ownership, trust, and experimentation. My approach involves coaching teams to make outcome-driven decisions using OKRs, value stream mapping, and discovery best practices. I specialize in designing product strategies that align user needs with business goals, and I craft operationally efficient solutions for highly complex financial and rights-based ecosystems.
+                  I focus on building high-performing product teams grounded in a culture of ownership, trust, and continuous experimentation. My approach emphasizes coaching teams to make outcome-driven decisions through strategic alignment, value-focused delivery, and proven discovery practices. I specialize in shaping product strategies that connect user needs with business objectives, delivering operationally efficient solutions in complex, high-stakes environments.
                 </p>
                 <h3 className="text-lg md:text-xl font-semibold mb-2 bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text text-center">
                   How I Lead
