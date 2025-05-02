@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
+import { Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Footer = () => {
@@ -31,8 +31,8 @@ const Footer = () => {
               href="mailto:dejan.krstic@web.de" 
               className="group"
             >
-              <Button variant="outline" className="gap-2 group text-sm md:text-base bg-gradient-to-r from-blue-500 to-purple-500 text-white border-transparent">
-                Get in Touch <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              <Button variant="outline" size="sm" className="gap-2 group text-xs md:text-sm bg-gradient-to-r from-blue-500 to-purple-500 text-white border-transparent">
+                Get in Touch <Mail className="h-3 w-3 group-hover:scale-110 transition-transform" />
               </Button>
             </a>
           </nav>
