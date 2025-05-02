@@ -1,5 +1,5 @@
-
 import { Link } from "react-router-dom";
+import { Mail } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -26,6 +26,13 @@ const Footer = () => {
             <Link to="/booking" className="text-sm font-medium text-white/70 hover:text-white transition-colors duration-200 hover:scale-105 transform">
               Coaching
             </Link>
+            <a 
+              href="mailto:dejan.krstic@web.de" 
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium hover:from-blue-600 hover:to-purple-700 transition-all duration-200 hover:scale-105 transform"
+            >
+              <Mail className="h-4 w-4" />
+              Get in Touch
+            </a>
           </nav>
         </div>
       </div>
