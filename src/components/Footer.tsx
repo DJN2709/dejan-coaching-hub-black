@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { Mail } from "lucide-react";
+import { Mail, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -28,10 +29,11 @@ const Footer = () => {
             </Link>
             <a 
               href="mailto:dejan.krstic@web.de" 
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium hover:from-blue-600 hover:to-purple-700 transition-all duration-200 hover:scale-105 transform"
+              className="group"
             >
-              <Mail className="h-4 w-4" />
-              Get in Touch
+              <Button variant="outline" className="gap-1 group text-sm md:text-base bg-gradient-to-r from-blue-500 to-purple-500 text-white border-transparent">
+                Get in Touch <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              </Button>
             </a>
           </nav>
         </div>
