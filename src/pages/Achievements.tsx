@@ -50,6 +50,19 @@ const Achievements = () => {
       ]
     },
     {
+      year: "Ongoing",
+      role: "Instructor & Featured Speaker, Product Leadership Coach",
+      company: "Product School, Independent",
+      description: "For over three years, I've shared practical frameworks and real-world experiences with a global community of 1M+ product professionals. Whether through workshops or 1:1 coaching, I help PMs grow into confident, strategic leaders who drive impact at scale. Additionally, I provide coaching and consulting to product leaders and organizations to help them build better products and teams.",
+      achievements: [
+        "Shared frameworks with 1M+ product professionals",
+        "Conducted workshops and 1:1 coaching",
+        "Helped PMs develop into strategic leaders",
+        "Developed custom frameworks for product leadership",
+        "Coached 100+ product leaders from startups to enterprise companies"
+      ]
+    },
+    {
       year: "Previous",
       role: "Lead Product Manager, Insights & Royalties",
       company: "SoundCloud",
@@ -69,19 +82,6 @@ const Achievements = () => {
         "Led royalty systems and technical services teams",
         "Enabled smarter licensing negotiations",
         "Connected technology, rights, and finance departments"
-      ]
-    },
-    {
-      year: "Ongoing",
-      role: "Instructor & Featured Speaker, Product Leadership Coach",
-      company: "Product School, Independent",
-      description: "For over three years, I've shared practical frameworks and real-world experiences with a global community of 1M+ product professionals. Whether through workshops or 1:1 coaching, I help PMs grow into confident, strategic leaders who drive impact at scale. Additionally, I provide coaching and consulting to product leaders and organizations to help them build better products and teams.",
-      achievements: [
-        "Shared frameworks with 1M+ product professionals",
-        "Conducted workshops and 1:1 coaching",
-        "Helped PMs develop into strategic leaders",
-        "Developed custom frameworks for product leadership",
-        "Coached 100+ product leaders from startups to enterprise companies"
       ]
     }
   ];
