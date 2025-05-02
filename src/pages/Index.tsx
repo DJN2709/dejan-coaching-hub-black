@@ -54,7 +54,7 @@ const Index = () => {
                   How I Lead
                 </h3>
                 <p className="text-base md:text-lg text-white/90 mb-4 text-center">
-                  Leadership is a team sport. I aim to cultivate psychological safety, curiosity, and joy within every team I work with. I've helped establish forums for collaborative planning, celebrated failure to normalize learning, and actively mentored team members in product craft.
+                  I strive to foster environments where psychological safety, curiosity, and a sense of purpose thrive. I've championed collaborative planning, embraced failure as a catalyst for learning, and mentored individuals to grow in their craft and confidence.
                 </p>
                 <p className="text-base md:text-lg text-white/90 mb-4 text-center">
                   I also speak at product events and mentor aspiring PMs through programs like Product School and Growth School.
