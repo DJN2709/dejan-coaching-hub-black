@@ -1,14 +1,24 @@
 import React from "react";
-import { Trophy, Award, Medal, BookOpen, Briefcase, Users } from "lucide-react";
+import { Trophy, Award, Medal, BookOpen, Briefcase, Users, Bot, Cpu, Sparkles } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const Achievements = () => {
   const achievements = [
     {
-      icon: <Briefcase className="h-8 w-8" style={{ color: '#9b87f5' }} />,
-      title: "Accelerated Financial Processes",
-      description: "Optimized financial operations and reduced operational costs by identifying and eliminating process bottlenecks."
+      icon: <Bot className="h-8 w-8" style={{ color: '#9b87f5' }} />,
+      title: "AI Agent Development",
+      description: "Building intelligent AI agents that automate complex business processes, from workflow orchestration to autonomous decision-making systems."
+    },
+    {
+      icon: <Cpu className="h-8 w-8" style={{ color: '#9b87f5' }} />,
+      title: "AI-Driven Process Automation",
+      description: "Designing and implementing AI-powered solutions that streamline operations, eliminate manual bottlenecks, and accelerate time-to-value across teams."
+    },
+    {
+      icon: <Sparkles className="h-8 w-8" style={{ color: '#9b87f5' }} />,
+      title: "AI Prototyping & Innovation",
+      description: "Hands-on prototyping with cutting-edge AI tools and LLMs—exploring new frontiers in product development, discovery, and intelligent automation."
     },
     {
       icon: <Users className="h-8 w-8" style={{ color: '#9b87f5' }} />,
@@ -19,6 +29,11 @@ const Achievements = () => {
       icon: <Trophy className="h-8 w-8" style={{ color: '#9b87f5' }} />,
       title: "Outcome-Driven Culture",
       description: "Introduced product frameworks and monthly prioritization rituals, replacing rigid timelines with adaptive, value-driven planning."
+    },
+    {
+      icon: <Briefcase className="h-8 w-8" style={{ color: '#9b87f5' }} />,
+      title: "Accelerated Financial Processes",
+      description: "Optimized financial operations using data-driven approaches and AI-assisted analysis to identify and eliminate process bottlenecks."
     },
     {
       icon: <Medal className="h-8 w-8" style={{ color: '#9b87f5' }} />,
@@ -32,8 +47,8 @@ const Achievements = () => {
     },
     {
       icon: <Award className="h-8 w-8" style={{ color: '#9b87f5' }} />,
-      title: "Educator & Speaker",
-      description: "As a featured speaker and instructor at Product School, mentored aspiring product managers and equipped them with the tools to lead with clarity, confidence, and purpose."
+      title: "AI Product Leadership Educator",
+      description: "Featured speaker on AI in product management at Product School and industry events. Mentoring the next generation of AI-savvy product leaders."
     }
   ];
   
@@ -42,23 +57,26 @@ const Achievements = () => {
       year: "Current",
       role: "Group Product Manager, Creator and Enterprise Payouts",
       company: "Spotify",
-      description: "Driving innovation in the complex world of royalties and creator payouts. Built and led high-performing teams across EMEA, launching scalable solutions that power the financial backbone of Spotify's creator economy.",
+      description: "Driving innovation in the complex world of royalties and creator payouts. Built and led high-performing teams across EMEA, launching scalable solutions that power the financial backbone of Spotify's creator economy. Actively leveraging AI to automate complex financial workflows and build intelligent agents for operational excellence.",
       achievements: [
         "Led cross-functional teams across EMEA",
         "Launched scalable payout solutions",
-        "Improved the financial infrastructure for the creator economy"
+        "Improved the financial infrastructure for the creator economy",
+        "Building AI agents for process automation and efficiency",
+        "Pioneering AI-driven approaches to complex financial operations"
       ]
     },
     {
       year: "Ongoing",
-      role: "Instructor & Featured Speaker, Product Leadership Coach",
+      role: "AI Product Leadership Coach & Speaker",
       company: "Product School, Independent",
-      description: "For over three years, I've shared practical frameworks and real-world experiences with a global community of 1M+ product professionals. Whether through workshops or 1:1 coaching, I help PMs grow into confident, strategic leaders who drive impact at scale. Additionally, I provide coaching and consulting to product leaders and organizations to help them build better products and teams.",
+      description: "For over three years, I've shared practical frameworks and real-world experiences with a global community of 1M+ product professionals. Today, I focus heavily on AI product management—helping leaders understand how to build, integrate, and leverage AI in their products and processes. Whether through workshops or 1:1 coaching, I help PMs grow into confident, AI-savvy leaders who drive impact at scale.",
       achievements: [
         "Shared frameworks with 1M+ product professionals",
-        "Conducted workshops and 1:1 coaching",
-        "Helped PMs develop into strategic leaders",
-        "Developed custom frameworks for product leadership",
+        "Leading workshops on AI in product management",
+        "Coaching on AI agent development and implementation",
+        "Helping organizations adopt AI-first product strategies",
+        "Developed custom AI-enhanced frameworks for product leadership",
         "Coached 100+ product leaders from startups to enterprise companies"
       ]
     },

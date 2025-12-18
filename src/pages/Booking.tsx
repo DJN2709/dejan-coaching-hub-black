@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Calendar, Clock, Users, Briefcase, CheckCircle2, PhoneCall, Video, Users2 } from "lucide-react";
+import { Calendar, Clock, Users, Briefcase, CheckCircle2, PhoneCall, Video, Users2, Bot, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
@@ -12,6 +12,21 @@ import { toast } from "sonner";
 
 const Booking = () => {
   const coachingServices = [
+    {
+      icon: <Bot className="h-6 w-6" style={{ color: '#9b87f5' }} />,
+      title: "AI Strategy Session",
+      description: "Hands-on guidance on AI product management, agent development, and implementing AI in your workflows.",
+      duration: "90 min",
+      price: "€180",
+      features: [
+        "AI implementation roadmap",
+        "Agent architecture review",
+        "AI tool recommendations",
+        "Process automation strategies",
+        "Follow-up resources"
+      ],
+      bookingUrl: "https://booking.setmore.com/scheduleappointment/9307d7e5-e172-46a0-84e0-6cee4d029640/services/cc0e3f23-6603-4b8c-a323-8972071236ba"
+    },
     {
       icon: <Users className="h-6 w-6" style={{ color: '#9b87f5' }} />,
       title: "1:1 Coaching",
@@ -27,29 +42,29 @@ const Booking = () => {
       bookingUrl: "https://booking.setmore.com/scheduleappointment/9307d7e5-e172-46a0-84e0-6cee4d029640/services/cc0e3f23-6603-4b8c-a323-8972071236ba"
     },
     {
-      icon: <Video className="h-6 w-6" style={{ color: '#9b87f5' }} />,
-      title: "Team Workshop",
-      description: "Interactive workshops for product teams to align on strategy and improve collaboration.",
+      icon: <Sparkles className="h-6 w-6" style={{ color: '#9b87f5' }} />,
+      title: "AI Team Workshop",
+      description: "Interactive workshops on leveraging AI for product teams—from prototyping to production agents.",
       duration: "2 hours",
-      price: "€450",
+      price: "€550",
       features: [
-        "Custom workshop design",
-        "Collaborative exercises",
-        "Team alignment",
-        "Framework implementation"
+        "AI tools & capabilities overview",
+        "Hands-on prototyping exercises",
+        "Agent workflow design",
+        "Team AI adoption strategies"
       ],
       bookingUrl: "https://booking.setmore.com/scheduleappointment/9307d7e5-e172-46a0-84e0-6cee4d029640/services/d0c5105d-b68f-4248-932b-70a8684a958b"
     },
     {
       icon: <Briefcase className="h-6 w-6" style={{ color: '#9b87f5' }} />,
       title: "Leadership Advisory",
-      description: "Strategic advisory services for product executives and leadership teams.",
+      description: "Strategic advisory services for product executives navigating AI transformation.",
       duration: "90 min",
       price: "€250",
       features: [
-        "Strategic planning",
+        "AI-first strategic planning",
         "Leadership development",
-        "Organizational design",
+        "Organizational AI readiness",
         "Change management"
       ],
       bookingUrl: "https://booking.setmore.com/scheduleappointment/9307d7e5-e172-46a0-84e0-6cee4d029640/services/51a80e26-d104-4193-9c25-1eb0a5a2b763"
@@ -68,7 +83,7 @@ const Booking = () => {
                 Book a Coaching Session
               </h1>
               <p className="text-xl text-white/80">
-                Elevate your product leadership with tailored coaching designed to unlock your full potential, sharpen your strategic thinking, and drive real impact—where it matters most.
+                Elevate your product leadership with tailored coaching in AI strategy, agent development, and modern product management. Get hands-on guidance from someone who builds with AI every day.
               </p>
             </div>
           </div>
@@ -85,7 +100,7 @@ const Booking = () => {
                 Choose the coaching format that best fits your needs and goals
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {coachingServices.map((service, index) => (
                 <Card 
                   key={index} 

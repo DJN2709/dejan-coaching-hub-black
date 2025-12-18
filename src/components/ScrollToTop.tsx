@@ -11,4 +11,6 @@ const ScrollToTop = () => {
   return null;
 };
 
+const GA_MEASUREMENT_ID = 'G-ZCJY6MKB8B';
+
 export default ScrollToTop; 

@@ -9,15 +9,15 @@ const Hero = () => {
           <div className="flex-1 space-y-4 md:space-y-6 text-center animate-fade-in">
             <div className="flex flex-col items-center gap-4">
               <h1 className="font-display text-3xl md:text-4xl lg:text-6xl font-bold tracking-tight text-white">
-                Product Leadership <span className="bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">Coaching</span>
+                AI-Powered <span className="bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">Product Leadership</span>
               </h1>
             </div>
             <div className="space-y-4">
               <p className="text-lg md:text-xl text-white/80 max-w-prose">
-                Accelerate your product development with battle-tested frameworks, real-world insights, and personal coaching from someone who's been in the trenches.
+                Building the future of product management through AI agents, intelligent automation, and hands-on prototyping. 12+ years of product leadership meets cutting-edge AI innovation.
               </p>
               <p className="text-base md:text-lg font-semibold text-white max-w-prose">
-                Let's turn your product vision into reality—together.
+                From vision to AI-powered reality—let's build what's next.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

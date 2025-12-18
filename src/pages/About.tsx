@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Users, Heart, Handshake, MessageSquare } from "lucide-react";
+import { Users, Heart, Handshake, MessageSquare, Bot, Sparkles } from "lucide-react";
 
 const About = () => {
   return (
@@ -22,6 +22,9 @@ const About = () => {
                   </p>
                   <p>
                     My journey in product leadership has taught me that the most impactful products are built not just with technical excellence, but with deep empathy, understanding, and a relentless focus on solving real human problems.
+                  </p>
+                  <p>
+                    Today, I'm deeply immersed in <strong className="text-white">AI and intelligent automation</strong>. I build AI agents, prototype with cutting-edge tools, and help organizations harness AI for operational excellence. I believe AI is the most transformative technology of our time—and I'm committed to helping product leaders navigate this new frontier.
                   </p>
                   <p>
                     I believe in leading with heart, fostering psychological safety, and creating environments where innovation thrives through open collaboration and fearless experimentation.
@@ -46,7 +49,21 @@ const About = () => {
 
         <section className="py-16 bg-gradient-to-b from-black to-gray-900">
           <div className="container px-4 md:px-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="flex flex-col items-center text-center space-y-4">
+                <div className="p-3 bg-white/5 rounded-full">
+                  <Bot className="h-8 w-8" style={{ color: '#9b87f5' }} />
+                </div>
+                <h3 className="text-xl font-bold text-white">AI-First Mindset</h3>
+                <p className="text-white/80">Building and deploying AI agents that transform how teams work and deliver value.</p>
+              </div>
+              <div className="flex flex-col items-center text-center space-y-4">
+                <div className="p-3 bg-white/5 rounded-full">
+                  <Sparkles className="h-8 w-8" style={{ color: '#9b87f5' }} />
+                </div>
+                <h3 className="text-xl font-bold text-white">Hands-On Innovation</h3>
+                <p className="text-white/80">Prototyping with cutting-edge AI tools and bringing ideas to life through experimentation.</p>
+              </div>
               <div className="flex flex-col items-center text-center space-y-4">
                 <div className="p-3 bg-white/5 rounded-full">
                   <Heart className="h-8 w-8" style={{ color: '#9b87f5' }} />

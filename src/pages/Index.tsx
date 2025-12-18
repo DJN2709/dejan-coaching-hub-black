@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Award, Code, Calendar } from "lucide-react";
+import { ArrowRight, Award, Code, Calendar, Bot, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -8,21 +8,27 @@ import Hero from "@/components/Hero";
 const Index = () => {
   const features = [
     {
+      icon: <Bot className="h-10 w-10" style={{ color: '#9b87f5' }} />,
+      title: "AI & Automation",
+      description: "Building AI agents and intelligent automation solutions that transform how product teams work and deliver value.",
+      link: "/achievements"
+    },
+    {
       icon: <Award className="h-10 w-10" style={{ color: '#9b87f5' }} />,
       title: "Achievements",
-      description: "Explore my professional journey, accomplishments, and the impact I've made across various organizations.",
+      description: "Explore my professional journey—from launching Fan-Powered Royalties to pioneering AI-driven workflows.",
       link: "/achievements"
     },
     {
       icon: <Code className="h-10 w-10" style={{ color: '#9b87f5' }} />,
       title: "Frameworks",
-      description: "Discover the product management frameworks I've developed and implemented to drive success.",
+      description: "Battle-tested product management frameworks enhanced with AI-powered decision-making tools.",
       link: "/frameworks"
     },
     {
       icon: <Calendar className="h-10 w-10" style={{ color: '#9b87f5' }} />,
       title: "Coaching",
-      description: "Book personalized coaching sessions to accelerate your product leadership growth.",
+      description: "Personalized coaching on AI product strategy, agent development, and modern product leadership.",
       link: "/booking"
     }
   ];
@@ -42,13 +48,19 @@ const Index = () => {
               </h2>
               <div className="max-w-[1200px] mx-auto">
                 <p className="text-base md:text-lg text-white/90 mb-4 text-center">
-                  I help product teams move faster, think clearer, and build smarter—by combining deep domain expertise with battle-tested product frameworks and a people-first approach. With over 12 years of product leadership experience in the music-tech space, I've worked across B2C and B2B, helping launch, scale, and sometimes gloriously fail products. Every step brought its own lesson, and I use that knowledge today to empower others to do better work.
+                  I help product teams move faster, think clearer, and build smarter—by combining deep domain expertise with battle-tested product frameworks, AI-powered solutions, and a people-first approach. With over 12 years of product leadership experience in the music-tech space, I've worked across B2C and B2B, helping launch, scale, and sometimes gloriously fail products. Every step brought its own lesson, and I use that knowledge today to empower others to do better work.
                 </p>
                 <h3 className="text-lg md:text-xl font-semibold mb-2 bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text text-center">
                   What I Do
                 </h3>
                 <p className="text-base md:text-lg text-white/90 mb-4 text-center">
-                  I focus on building high-performing product teams grounded in a culture of ownership, trust, and continuous experimentation. My approach emphasizes coaching teams to make outcome-driven decisions through strategic alignment, value-focused delivery, and proven discovery practices. I specialize in shaping product strategies that connect user needs with business objectives, delivering operationally efficient solutions in complex, high-stakes environments.
+                  I focus on building high-performing product teams grounded in a culture of ownership, trust, and continuous experimentation. Today, I'm deeply invested in <strong className="text-white">AI product management</strong>—building AI agents that automate complex workflows, prototyping intelligent solutions, and helping organizations harness AI for process efficiencies. I specialize in shaping product strategies that connect user needs with business objectives, delivering operationally efficient solutions in complex, high-stakes environments.
+                </p>
+                <h3 className="text-lg md:text-xl font-semibold mb-2 bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text text-center">
+                  AI-First Approach
+                </h3>
+                <p className="text-base md:text-lg text-white/90 mb-4 text-center">
+                  I believe AI is reshaping how we build and lead product teams. I actively prototype with cutting-edge AI tools, develop autonomous agents for operational excellence, and apply AI-driven insights to strategic decision-making. From streamlining internal processes to reimagining product discovery, I'm hands-on with the technology that's defining the next era of product management.
                 </p>
                 <h3 className="text-lg md:text-xl font-semibold mb-2 bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text text-center">
                   How I Lead
@@ -57,11 +69,11 @@ const Index = () => {
                   I strive to foster environments where psychological safety, curiosity, and a sense of purpose thrive. I've championed collaborative planning, embraced failure as a catalyst for learning, and mentored individuals to grow in their craft and confidence.
                 </p>
                 <p className="text-base md:text-lg text-white/90 mb-4 text-center">
-                  I also speak at product events and mentor aspiring PMs through programs like Product School and Growth School.
+                  I also speak at product events on AI in product management and mentor aspiring PMs through programs like Product School and Growth School.
                 </p>
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
               {features.map((feature, index) => (
                 <div 
                   key={index} 
